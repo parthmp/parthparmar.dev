@@ -1,0 +1,60 @@
+@import 'variables.css';
+@import 'mixins.css';
+
+.container{
+
+    width:100%;
+
+    margin-top:0;
+    margin-bottom:0;
+    margin-left:auto;
+    margin-right:auto;
+    background:red;
+
+    @mixin isMedium{
+        width:$container-width;
+    }
+}
+
+.top-menu{
+    
+   
+    margin:0;
+    margin-left:auto;
+    margin-right:auto;
+    
+    &__menu-list{
+
+        margin:0;
+        padding:0;
+        list-style-type:none;
+        
+        li{
+            
+            float:left;
+            margin-left:1.8rem;
+            
+
+            a{
+                display:block;
+                text-decoration:none;
+                background:green;
+                padding:0.8rem 1.6rem;
+            }
+
+        }
+
+    }
+
+    &__menu-list::after{
+        content: "";
+        float:none;
+        clear:both;
+        display: block;
+    }
+
+    @mixin isSmall{
+        
+    }
+
+}

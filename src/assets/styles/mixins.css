@@ -1,0 +1,23 @@
+@define-mixin isSmall {
+    @media only screen and (min-width:600px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin isMedium {
+    @media only screen and (min-width:768px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin isLarge {
+    @media only screen and (min-width:992px) {
+        @mixin-content;
+    }
+}
+
+@define-mixin isExtraLarge {
+    @media only screen and (min-width:1200px) {
+        @mixin-content;
+    }
+}
