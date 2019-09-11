@@ -73,20 +73,22 @@ import { setInterval, clearInterval } from 'timers';
         data : function(){
             return {
                 first_heading : '',
-                first_heading_completed : 'My name is Parth,,',
+                first_heading_completed : 'My name is Parth,',
                 second_heading: '',
-                second_heading_completed : 'And i am a programmer..',
+                second_heading_completed : 'And i am a programmer.',
                 min : 200,
                 max : 100,
                 showFirstCursor:true,
                 showSecondCursor:false,
-                showContent:false
+                showContent:false,
+                alreadyLoaded : false
             };
         },
         methods : {
             runSecondHeading : function(){
                 let milies = Math.floor(Math.random() * (+this.max - +this.min)) + +this.min;
                 let ray = this.second_heading_completed.split("");
+                ray.push('.');
                 let counter = 0;
                 let stopme = setInterval(() => {
                     this.second_heading += ray[counter];
@@ -95,25 +97,40 @@ import { setInterval, clearInterval } from 'timers';
                         clearInterval(stopme);
                         this.showSecondCursor = false;
                         this.showContent = true;
+                        this.$store.commit('changeLoaded', true);
+
                     }
                 }, milies);
             }
         },
         created : function(){
+            this.alreadyLoaded = this.$store.getters.getLoaded;
+
+            if(this.alreadyLoaded){
+                this.showFirstCursor = false;
+                this.showSecondCursor = true;
+                this.showSecondCursor = false;
+                this.showContent = true;
+                this.first_heading = this.first_heading_completed;
+                this.second_heading = this.second_heading_completed;
+            }else{
+                let milies = Math.floor(Math.random() * (+this.max - +this.min)) + +this.min;
+                let ray = this.first_heading_completed.split("");
+                ray.push(',');
+                let counter = 0;
+                let stopme = setInterval(() => {
+                    this.first_heading += ray[counter];
+                    counter++;
+                    if((counter+1) >= ray.length){
+                        clearInterval(stopme);
+                        this.showFirstCursor = false;
+                        this.showSecondCursor = true;
+                        this.runSecondHeading();
+                    }
+                }, milies);
+            }
+
             
-            let milies = Math.floor(Math.random() * (+this.max - +this.min)) + +this.min;
-            let ray = this.first_heading_completed.split("");
-            let counter = 0;
-            let stopme = setInterval(() => {
-                this.first_heading += ray[counter];
-                counter++;
-                if((counter+1) >= ray.length){
-                    clearInterval(stopme);
-                    this.showFirstCursor = false;
-                    this.showSecondCursor = true;
-                    this.runSecondHeading();
-                }
-            }, milies);
         }
 
     }

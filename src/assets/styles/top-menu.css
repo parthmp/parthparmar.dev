@@ -26,10 +26,10 @@
 
     @mixin isMedium{
         background:RGBA(255,255,255,0.9);
-        width:fit-content;
+        width:25%;
         left:50%;
         transform:translateX(-50%);
-        padding:0.6rem 1.5rem 0.6rem 1.5rem;
+        padding:1rem;
         border-radius:1rem;
         box-shadow:0px 0px 25px #e7e7e7;
     }
@@ -75,7 +75,9 @@
             @mixin isMedium{
                 float:left;
                 margin-left:1.8rem;
-                width:fit-content;
+                width:29%;
+                //width:fit-content;
+                text-align:center;
             }
 
             a{
@@ -113,6 +115,7 @@
             float:right;
             display: inline-block;
             opacity: 1 !important;
+            width:100%;
         }
 
     }

@@ -9,7 +9,6 @@
             <ul class="top-menu__menu-list" :class="{showMenuClass : showMenu}" :style="{opacity : opacityNum}">
                 <li><router-link @click.native="lateRespond" to="/">Home</router-link></li>
                 <li><router-link @click.native="lateRespond" to="/resume">Resume</router-link></li>
-                <li><router-link @click.native="lateRespond" to="/portfolio">Portfolio</router-link></li>
                 <li><router-link @click.native="lateRespond" to="/contact">Contact Me</router-link></li>
             </ul>
         </transition>
