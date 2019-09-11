@@ -1,19 +1,31 @@
 <template>
     <div>
         <div class="container">
-            <div class="top-menu">
-                <ul class="top-menu__menu-list">
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Portfolio</a></li>
-                    <li><a href="">Contact Me / Hire Me</a></li>
-                </ul>
-            </div>
+            
+            <app-top-menu></app-top-menu>
+            <br />
+            <br />
+            <br />
+            <br />
+            <router-view></router-view>
+
         </div>
     </div>
 </template>
 
-<style>
+<script>
 
-    @import '../assets/styles/top-menu.css';
+import TopMenu from './TopMenu';
+
+export default {
+    components : {
+        appTopMenu : TopMenu
+    }
+}
+</script>
+
+<style>
+   
+    @import '../assets/styles/common.css';
     
 </style>

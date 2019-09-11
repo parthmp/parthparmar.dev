@@ -16,5 +16,5 @@ export default {
 </script>
 
 <style>
-  @import "normalize.css";
+  @import "./assets/styles/reset.css";
 </style>
