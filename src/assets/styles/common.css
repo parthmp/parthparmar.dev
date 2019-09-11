@@ -17,3 +17,55 @@ h1, h2, h3, h4, h5, h6, span, p, input, textarea, li, a{
         padding:1rem;
     }
 }
+.menuPaddingFix{
+
+    margin:1rem;
+
+    @mixin isMedium{
+        margin:0;
+        margin-top:2rem;
+    }
+}
+.img{
+    width:100%;
+}
+.smallPadding{
+    padding:1rem;
+}
+.smallMargin{
+    margin:1rem;
+}
+.img-rounded{
+    border-radius:100rem;
+}
+.leftPadding{
+    padding-left:1rem;
+    @mixin isMedium{
+        padding-left:0rem;
+    }
+}
+.rightPadding{
+    padding-right:1rem;
+    @mixin isMedium{
+        padding-right:0rem;
+    }
+}
+.img-border-green{
+  
+    border:1px solid $border-green;
+}
+.topDeskMargin{
+    margin-top:1rem;
+    @mixin isMedium{
+        margin-top:3rem;
+    }
+}
+p{
+    //margin-top:0.5rem;
+    line-height: 1.6rem;
+    font-size: 1.2rem;
+}
+a{
+    text-decoration: none;
+    color:#3cb218;
+}

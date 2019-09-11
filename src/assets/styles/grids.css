@@ -1,0 +1,90 @@
+@import 'variables.css';
+@import 'common.css';
+@import 'mixins.css';
+
+.row{
+    width:100%;
+}
+.row::after{
+    clear:both;
+    float:none;
+}
+.col{
+    
+    @mixin isMedium{
+        float:left;
+    }
+}
+
+.col-1{
+    width:100%;
+    @mixin isMedium{
+        width:8.33%;
+    }
+}
+.col-2{
+    width:100%;
+    @mixin isMedium{
+        width:16.66%;
+    }
+}
+.col-3{
+    width:100%;
+    @mixin isMedium{
+        width:25%;
+    }
+}
+.col-4{
+    width:100%;
+    @mixin isMedium{
+        width:33.33%;
+    }
+}
+.col-5{
+    width:100%;
+    @mixin isMedium{
+        width:41.66%;
+    }
+}
+.col-6{
+    width:100%;
+    @mixin isMedium{
+        width:49.99%;
+    }
+}
+.col-7{
+    width:100%;
+    @mixin isMedium{
+        width:58.32%;
+    }
+}
+.col-8{
+    width:100%;
+    @mixin isMedium{
+        width:66.66%;
+    }
+}
+.col-9{
+    width:100%;
+    @mixin isMedium{
+        width:74.98%;
+    }
+}
+.col-10{
+    width:100%;
+    @mixin isMedium{
+        width:83.31%;
+    }
+}
+.col-11{
+    width:100%;
+    @mixin isMedium{
+        width:91.64%;
+    }
+}
+.col-12{
+    width:100%;
+    @mixin isMedium{
+        width:100%;
+    }
+}
