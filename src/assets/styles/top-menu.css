@@ -24,9 +24,23 @@
         display: block;
     }
 
+    
+
     @mixin isMedium{
         background:RGBA(255,255,255,0.9);
-        width:25%;
+        width:50%;
+        left:50%;
+        transform:translateX(-50%);
+        padding:1rem;
+        padding-top:0.5rem;
+        padding-bottom:0.5rem;
+        border-radius:1rem;
+        box-shadow:0px 0px 25px #e7e7e7;
+    }
+
+    @mixin isLarge{
+        background:RGBA(255,255,255,0.9);
+        width:48%;
         left:50%;
         transform:translateX(-50%);
         padding:1rem;
@@ -76,12 +90,12 @@
            
             @mixin isMedium{
                 float:left;
-                margin-left:1.8rem;
-                width:29%;
-                //width:fit-content;
+                margin-left:2%;
+                width:32%;
                 text-align:center;
             }
 
+            
             a{
                 display:block;
                 text-decoration:none;

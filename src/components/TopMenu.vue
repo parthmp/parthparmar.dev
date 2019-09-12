@@ -1,17 +1,20 @@
 <template>
-    <div class="top-menu">
-        
-          
+    <div>
         <div class="top-menu__launcher">
-            <a href="javascript:;" @click="lateRespond"><i class="fa fa-bars"></i>&nbsp;Menu</a>
+                <a href="javascript:;" @click="lateRespond"><i class="fa fa-bars"></i>&nbsp;Menu</a>
+            </div>
+        <div class="top-menu">
+            
+            
+            
+            <transition name="fade">
+                <ul class="top-menu__menu-list" :class="{showMenuClass : showMenu}" :style="{opacity : opacityNum}">
+                    <li><router-link @click.native="lateRespond" to="/">Home</router-link></li>
+                    <li><router-link @click.native="lateRespond" to="/resume">Resume</router-link></li>
+                    <li><router-link @click.native="lateRespond" to="/contact">Contact Me</router-link></li>
+                </ul>
+            </transition>
         </div>
-        <transition name="fade">
-            <ul class="top-menu__menu-list" :class="{showMenuClass : showMenu}" :style="{opacity : opacityNum}">
-                <li><router-link @click.native="lateRespond" to="/">Home</router-link></li>
-                <li><router-link @click.native="lateRespond" to="/resume">Resume</router-link></li>
-                <li><router-link @click.native="lateRespond" to="/contact">Contact Me</router-link></li>
-            </ul>
-        </transition>
     </div>
 </template>
 

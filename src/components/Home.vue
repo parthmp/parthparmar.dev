@@ -3,10 +3,7 @@
         <div class="container">
             
             <app-top-menu></app-top-menu>
-            <br />
-            <br />
-            <br />
-            <br />
+            
             <transition name="fade" mode="out-in">
                 <router-view></router-view>
             </transition>

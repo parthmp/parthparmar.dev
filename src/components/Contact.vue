@@ -14,8 +14,8 @@
         <br>
         <br>
         <h3>Send me an email</h3>
-        <p>You may send an email to parthparmaronline (at) gmail (dot) com , I read all emails there on daily basis.</p>
-        <p>You also may send message on skype, my skype id is : parthparmaronline</p>
+        <p>You may send an email to parthparmaronline (at) gmail (dot) com , I read all emails there on a daily basis.</p>
+        <p>You also may send a message on Skype, my Skype ID is: parthparmaronline</p>
         <br>
         <br>
         <a href="https://www.upwork.com/freelancers/~01bed55ae9935fc4d2" target="_blank"><h3>Hire me on Upwork</h3></a>
