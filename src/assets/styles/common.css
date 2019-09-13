@@ -54,8 +54,11 @@ h1, h2, h3, h4, h5, h6, span, p, input, textarea, li, a{
   
     border:1px solid $border-green;
 }
+.no-text-deco{
+    text-decoration: none;
+}
 .topDeskMargin{
-    margin-top:1rem;
+    margin-top:5rem;
     @mixin isMedium{
         margin-top:8rem;
     }

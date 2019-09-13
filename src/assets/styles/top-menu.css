@@ -15,7 +15,7 @@
     margin-left:auto;
     margin-right:auto;
     background: #fff;
-    
+    top:0;
     
     &::after{
         content: "";
@@ -30,24 +30,26 @@
         background:RGBA(255,255,255,0.9);
         width:50%;
         left:50%;
+        top:1rem;
         transform:translateX(-50%);
         padding:1rem;
         padding-top:0.5rem;
         padding-bottom:0.5rem;
         border-radius:1rem;
-        box-shadow:0px 0px 25px #e7e7e7;
+        box-shadow:0px 0px 25px $light-gray;
     }
 
     @mixin isLarge{
         background:RGBA(255,255,255,0.9);
         width:48%;
         left:50%;
+        top:1rem;
         transform:translateX(-50%);
         padding:1rem;
         padding-top:0.5rem;
         padding-bottom:0.5rem;
         border-radius:1rem;
-        box-shadow:0px 0px 25px #e7e7e7;
+        box-shadow:0px 0px 25px $light-gray;
     }
 
     &__launcher{
@@ -55,7 +57,8 @@
         display:block;
         
         a{
-            display:block;
+            display:inline-block;
+            width:100%;
             font-size:1.6rem;
             text-align:left;
             text-decoration:none;
