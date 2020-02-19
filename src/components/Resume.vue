@@ -50,7 +50,22 @@ Adobe Illustrator, Adobe Photoshop, Eclipse.</p>
         <br>
         <br>
         <h3>Work Experience</h3>
-        <h4>Freelance Programmer (Oct 2018 – Current)</h4>
+        <br>
+        <h4>ColorElephant Lda - Fullstack Programmer (Nov 2019 – Current)</h4>
+        <br>
+        <h4>Porto, Portugal (Remote)</h4>
+        <br>
+        <ul>
+            <li>Worked on multiple projects for the company which included multiple REST APIs and complex code.</li>
+            <li>Worked with Laravel on a daily basis for multiple projects.</li>
+            <li>Worked with Nova, Its packages and made custom solutions for the same using VueJS and REST APIs.</li>
+            <li>Communicated well and attended team/company wide meetings.</li>
+        </ul>
+
+        <br>
+        <br>
+        <br>
+        <h4>Freelance Programmer (Oct 2018 – Nov 2019)</h4>
         <br>
         <h4>Worldwide</h4>
         <br>
@@ -58,6 +73,7 @@ Adobe Illustrator, Adobe Photoshop, Eclipse.</p>
             <li>Worked with latest JavaScript and PHP technologies such as Angular 7 and Laravel</li>
             <li>Worked with REST Apis with laravel and Passport and oauth 2.0</li>
             <li>Created a native android app with Java for a Canadian municipality.</li>
+            <li>Became "TOP RATED" freelancer once again on <a href="https://www.upwork.com/freelancers/~01bed55ae9935fc4d2" target="_blank">Upwork</a>.</li>
         </ul>
 
         <br>
