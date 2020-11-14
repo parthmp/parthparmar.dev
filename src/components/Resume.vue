@@ -2,7 +2,7 @@
     <div class="leftPadding rightPadding topDeskMargin">
         <h1>Resume</h1>
         <h3>Summary</h3>
-        <p>Over 7 Years of professional experience in web &amp; software programming, database design,integration, management, upgrade, training and system administration.</p>
+        <p>Vast professional experience in web &amp; software programming, database design,integration, management, upgrade, training and system administration.</p>
         <br>
         <br>
         <br>
@@ -51,7 +51,7 @@ Adobe Illustrator, Adobe Photoshop, Eclipse.</p>
         <br>
         <h3>Work Experience</h3>
         <br>
-        <h4>ColorElephant Lda - Fullstack Programmer (Nov 2019 – Current)</h4>
+        <h4>ColorElephant Lda - Fullstack Programmer (Nov 2019 – Nov 2020)</h4>
         <br>
         <h4>Porto, Portugal (Remote)</h4>
         <br>
