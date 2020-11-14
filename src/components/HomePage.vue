@@ -76,7 +76,7 @@ import { setInterval, clearInterval } from 'timers';
                 first_heading : '',
                 first_heading_completed : 'My name is Parth,',
                 second_heading: '',
-                second_heading_completed : 'And i am a programmer.',
+                second_heading_completed : 'And I am a programmer.',
                 min : 45,
                 max : 55,
                 showFirstCursor:true,
