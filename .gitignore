@@ -1,0 +1,44 @@
+# Nuxt build output
+.output/
+.nuxt/
+.dist/
+.cache/
+node_modules/
+.nitro/
+build/
+
+# Static site output (SSG)
+dist/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# Editor folders and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+*.swm
+
+# macOS / Linux / Windows cruft
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Optional: lock files if using multiple package managers
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Local runtime
+*.local
