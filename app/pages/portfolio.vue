@@ -6,6 +6,10 @@
 	</div>
 </template>
 
-<script setup>
+<script lang="ts" setup>
+import { onMounted } from 'vue';
 
+	onMounted(() => {
+		console.log('portfolio page');
+	})
 </script>

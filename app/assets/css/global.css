@@ -1,2 +1,187 @@
 @import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+/* hide content until theme applied */
 
+
+/* :root {
+ 	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+} */
+*{
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+.poppins-medium{
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+.poppins-bold{
+	font-family: "Poppins", sans-serif;
+	font-weight: 700;
+	font-style: normal;
+}
+
+
+@layer base {
+  body {
+    @apply bg-[url('../images/bg.svg')] bg-size-[120px];
+  }
+  .dark body {
+    @apply bg-[url('../images/bg-dark.svg')] bg-size-[120px];
+  }
+}
+/* themes */
+@theme {
+  --color-primary: #e35336;
+  --color-primary-dark: #a0522d;
+  --color-primary-burnt: #f4a460;
+  --color-color-text:#22262b;
+  --color-color-text-iv:#e9eef5;
+  --color-global-background: #f8f7f5;
+  --color-body:#f5f5dc;
+  --color-mobile-bg:#f5f5dc;
+  
+  --color-phone-menu-background:#f0ede7;
+  --color-s-primary:#3d5165;
+}
+/*
+@layer theme {
+  * {
+    	@variant dark {
+
+		}
+	}
+}
+*/
+.dark{
+	/* --color-primary: rgb(156, 164, 1); */
+	
+	--color-global-background: #181614;
+	--color-color-text:#e9eef5;
+	--color-color-text-iv:#22262b;
+	--color-mobile-bg:#f5f5dc;
+	
+	--color-phone-menu-background:#221f1c;
+	--color-s-primary:#293031;
+	
+}
+
+p, h1, div, section, menu, button, a{
+	@apply text-color-text transition-all duration-300;
+	 
+}
+
+/* body{
+	@apply bg-global-background;
+} */
+
+#menu{
+	@apply min-w-[65%] h-screen fixed top-0 shadow-lg z-20 bg-phone-menu-background lg:bg-transparent lg:shadow-none lg:h-auto lg:static lg:left-0;
+}
+#menu{
+	/* now make it float for lg */
+	@apply lg:container lg:mx-auto lg:sticky lg:mt-0 lg:z-30;
+}
+#menu .left-menu li a{
+	@apply font-medium block px-3 py-2 border-b-5 border-solid border-transparent hover:border-b-5 hover:border-solid hover:border-primary-dark transition-all duration-300;
+}
+.primary-btn{
+	@apply bg-primary cursor-pointer pl-8 pr-6.5 py-2 rounded-lg text-white shadow-lg hover:bg-white hover:text-primary hover:shadow-none hover:scale-105;
+}
+.s-primary-btn{
+	@apply bg-s-primary! hover:text-primary! hover:bg-white! hover:shadow-none hover:scale-105;
+}
+.lets-talk-icon path{
+	@apply text-color-text-iv dark:text-color-text;
+}
+.btn-lg{
+	@apply text-xl pl-10 pr-[37px] py-3 shadow-2xl w-full lg:w-[initial];
+}
+.btn-icon{
+	@apply flex gap-1 justify-center items-center;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+.btn-icon-inline{
+	@apply inline-flex!;
+}
+.primary-btn:hover path, .s-primary-btn:hover path{
+	@apply text-primary!;
+}
+
+.launcher{
+	@apply bg-primary shadow-lg p-2.5 rounded-full fixed right-0 mr-2 z-10 flex items-center lg:hidden;
+}
+.launcher path, .scroll-to-top path{
+	@apply text-color-text-iv dark:text-color-text;
+}
+.scroll-to-top{
+	@apply bg-primary shadow-lg p-2.5 rounded-full fixed mr-2 z-10 flex items-center bottom-2.5! right-0 lg:right-10 lg:bottom-15!;
+}
+.skills .card-tech img{
+	@apply w-[100px]!;
+}
+/* define scrolled behavior with breakpoint */
+@media (min-width: 1024px) { /* lg breakpoint by default */
+  .scrolled #menu {
+    /* use Tailwind @apply to re-use utilities */
+    @apply bg-global-background; /* ensure this utility exists in your build */
+    /* optional: add shadow or backdrop */
+
+  }
+
+  /* if you want default lg state explicit */
+  #menu {
+    @apply bg-transparent;
+  }
+}
+.active-menu-item{
+	@apply lg:border-b-5 lg:border-solid lg:border-primary!;
+}
+.second-header{
+	@apply text-center lg:text-left text-4xl border-b-3 border-solid border-primary pb-2;
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
+.card{
+	@apply bg-phone-menu-background p-4 rounded-lg shadow-lg hover:scale-102;
+}
+.card-tech{
+	@apply bg-phone-menu-background p-2 rounded-lg shadow-lg hover:bg-transparent text-center;
+}
+.card-tech p{
+	@apply mt-2;
+}
+.tags{
+	@apply mt-4 flex flex-wrap flex-row gap-1.5;
+}
+.tag{
+	@apply text-sm bg-gray-200  px-4 py-1 mt-1 rounded-full shadow-sm;
+}
+.tag-primary{
+	@apply bg-primary/20 text-primary;
+}
+.tag-success{
+	@apply bg-green-700/20 text-green-900 dark:text-green-500;
+}
+.tag-blue{
+	@apply bg-blue-700/20 text-blue-900 dark:text-blue-500;
+}
+.tag-yellow{
+	@apply bg-yellow-700/20 text-yellow-900 dark:text-yellow-500;
+}
+.tag-light-blue{
+	@apply bg-blue-500/20 text-blue-900 dark:text-blue-300;
+}
+html.is-changing .transition-main {
+	transition: opacity 250ms ease-in-out;
+}
+
+html.is-animating .transition-main {
+	opacity: 0;
+}
