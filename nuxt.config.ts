@@ -7,6 +7,7 @@ export default defineNuxtConfig({
 
 	modules: [
     	'@nuxt/fonts',
+    	'@nuxt/image',
 		'@pinia/nuxt'
   	],
 	fonts: {
@@ -26,21 +27,19 @@ export default defineNuxtConfig({
 	vite: {
 	plugins: [
 		tailwindcss(),
-		ViteImageOptimizer({
-		png: {
-			quality: 80,
-		},
-		jpeg: {
-			quality: 80,
-		},
-		jpg: {
-			quality: 80,
-		},
-		webp: {
-			quality: 80,
-		},
-	}),
 	],
+	},
+	image: {
+    quality: 80,
+    format: ['webp'],
+    screens: {
+		xs: 320,
+		sm: 640,
+		md: 768,
+		lg: 1024,
+		xl: 1280,
+		xxl: 1536
+		}
 	},
 	app: {
 		pageTransition: { name: 'page', mode: 'out-in' },

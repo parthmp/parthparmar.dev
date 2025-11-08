@@ -1,10 +1,10 @@
 <template>
   <li class="theme-changer">
     <a href="javascript:;" @click.prevent="setCurrentTheme">
-      <span id="sun-icon" v-if="themeName === 'dark'">
+      <span id="sun-icon" v-if="themeName === 'light'">
         <IconSun :size="24" />
       </span>
-      <span id="moon-icon" v-if="themeName === 'light'">
+      <span id="moon-icon" v-if="themeName === 'dark'">
         <IconMoon :size="24" />
       </span>
     </a>
