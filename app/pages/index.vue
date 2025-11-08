@@ -21,6 +21,11 @@
 		<br>
 		<br>
 		<Technologies></Technologies>
+		<br>
+		<br>
+		<br>
+		<br>
+		<Reviews></Reviews>
 		
 		<br>
 		<br>
@@ -42,6 +47,7 @@
 	import InputButton from '../components/UI/InputButton.vue';
 	import AboutMe from '../components/AboutMe.vue';
 	import Technologies from '../components/Technologies.vue';
+	import Reviews from '../components/Reviews.vue';
 	
 
 </script>

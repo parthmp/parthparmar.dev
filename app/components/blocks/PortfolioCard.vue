@@ -1,6 +1,6 @@
 <template>
-	<span>
-		<NuxtLink :to="url">
+	<div class="flex flex-col h-full">
+		<NuxtLink :to="url" class="flex-grow" :class="{'mb-4': $slots.additional}">
 			<NuxtPicture
 				v-if="props.loading === 'preload'"
 				:src="props.image"
@@ -30,21 +30,21 @@
 				<Tag v-for="(tag, index) in props.tags" :type="tag.type">{{ tag.text }}</Tag>
 			</p>
 		</NuxtLink>
-		<br>
-		<br>
-		<NuxtLink :to="url" class="primary-btn s-primary-btn btn-icon btn-icon shadow-none!">
-			<span>View Details</span>
-			<IconEye></IconEye>
-		</NuxtLink>
-	</span>
+		
+		<slot v-if="$slots.additional" name="additional"></slot>
+
+		<div class="mt-auto pt-4">
+			<InputButton :to="url" :primary="false" icon="IconEye" add-classes="btn-icon shadow-none!" class="w-full!" text="View Details"></InputButton>
+		</div>
+	</div>
 </template>
 
 <script lang="ts" setup>
 
 	import { IconEye } from '@tabler/icons-vue';
 	import Tag from '../UI/Tag.vue';
-	import { computed } from 'vue';
-
+	import InputButton from '../UI/InputButton.vue';
+	
 	const props = defineProps({
 		url : {
 			type :String

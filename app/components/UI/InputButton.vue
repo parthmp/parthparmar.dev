@@ -10,11 +10,12 @@
 <script lang="ts" setup>
 import { computed } from 'vue';
 
-import { IconArrowUpRight, IconFileCv } from '@tabler/icons-vue';
+import { IconArrowUpRight, IconFileCv, IconEye } from '@tabler/icons-vue';
 
 const components = {
 	IconArrowUpRight,
-	IconFileCv
+	IconFileCv,
+	IconEye
 };
 
 const props = defineProps({
