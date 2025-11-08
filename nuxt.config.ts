@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
 // import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+import svgLoader from 'vite-svg-loader';
+
 
 
 export default defineNuxtConfig({
@@ -27,6 +29,7 @@ export default defineNuxtConfig({
 	vite: {
 	plugins: [
 		tailwindcss(),
+		svgLoader()
 	],
 	},
 	image: {
