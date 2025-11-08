@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import tailwindcss from "@tailwindcss/vite";
-import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
+// import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
 
 export default defineNuxtConfig({

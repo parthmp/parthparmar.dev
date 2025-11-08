@@ -58,33 +58,14 @@
 			</div>
 			<div class="col-span-12 lg:col-span-6 xl:col-span-4">
 				<Card>
-					<NuxtLink to="portfolio/social">
-						<NuxtPicture
-							src="/images/portfolio/social/social-1.png"
-							:img-attrs="{ class: 'w-full rounded-lg', alt: 'DeskMint Portfolio' }"
-							sizes="100vw md:768px lg:1024px"
-							format="webp"
-							loading="lazy"
-						/>
-						
-						<h3 class="text-xl mt-3 poppins-medium">Social Media PWA</h3>
-						<p class="mt-3">Private social network for a closed community, featuring OTP login, searchable profiles, verified accounts, and company pages.</p>
-						
-						<p class="tags">
-							<span class="tag tag-success">Vue</span>
-							<span class="tag tag-primary">Laravel</span>
-							<span class="tag tag-blue">MySQL</span>
-							<span class="tag tag-light-blue">Bootstrap</span>
-							<span class="tag tag-success">PWA</span>
-						</p>
-					</NuxtLink>
-					<br>
-					<br>
-					<NuxtLink to="/portfolio/social" class="primary-btn s-primary-btn btn-icon btn-icon shadow-none!">
-						<span>View Details</span>
-						<IconEye></IconEye>
-					</NuxtLink>
-
+					<PortfolioCard url="/portfolio/social" loading="preload" image="/images/portfolio/social/social-1.png" :image-attrs="{ class: 'w-full rounded-lg', alt: 'DeskMint Portfolio' }" :tags="tags.social">
+						<template #header>
+							Social Media PWA
+						</template>
+						<template #description>
+							Private social network for a closed community, featuring OTP login, searchable profiles, verified accounts, and company pages.
+						</template>
+					</PortfolioCard>
 				</Card>
 				
 			</div>
@@ -131,5 +112,17 @@
 	import Tag from './UI/Tag.vue';
 
 	import { IconBrandGithub, IconEye } from '@tabler/icons-vue';
+
+	import PortfolioCard from './blocks/PortfolioCard.vue';
+
+	const tags = {
+		social : [
+			{ type : 'success', text : 'Vue' },
+			{ type : 'primary', text : 'Laravel' },
+			{ type : 'blue', text : 'MySQL' },
+			{ type : 'light-blue', text : 'Bootstrap' },
+			{ type : 'success', text : 'PWA' },
+		]
+	};
 
 </script>
