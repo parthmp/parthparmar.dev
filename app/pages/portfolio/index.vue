@@ -4,7 +4,7 @@
 			Portfolio
 		</PageHeader>
 		<FeaturedWork :show-header="false"></FeaturedWork>
-		<div class="mt-5! grid grid-cols-12 gap-5 mb-20">
+		<div class="mt-5! grid grid-cols-12 gap-5">
 			<div class="col-span-12 lg:col-span-6">
 				<Card>
 					<PortfolioCard url="/portfolio/mproject" loading="eager" image="/images/portfolio/mproject/mproject-1.png" :image-attrs="{ class: 'w-full rounded-lg', alt: 'Real-time push notification example in two languages using MQTT' }" :tags="tags.potton">
@@ -35,7 +35,26 @@
 					</PortfolioCard>
 				</Card>
 			</div>
+			<div class="col-span-12">
+				<Card>
+					<h2 class="text-xl poppins-medium">The Portfolio Website You're Currently Viewing</h2>
+					<p class="mt-2">Meta, right? This portfolio site is built with Nuxt 4 + Vue 3 using SSG. It showcases reusable component architecture, composable patterns, dynamic routing, and optimized image delivery with NuxtPicture - all wrapped in thoughtful UI/UX with excellent performance. The code itself is a portfolio piece.</p>
+					<p class="tags mt-2!">
+						<Tag type="success">Nuxt</Tag>
+						<Tag type="yellow">Vue</Tag>
+						<Tag type="blue">Tailwind</Tag>
+						<Tag type="primary">Vite</Tag>
+					</p>
+					
+					<a href="https://github.com/parthmp/parthparmar.dev" target="_blank" class="mt-4 primary-btn s-primary-btn btn-icon btn-icon-inline lg:w-fit shadow-none!">
+						<span>Source Code</span>
+						<IconBrandGithub></IconBrandGithub>
+					</a>
+				</Card>
+			</div>
 		</div>
+
+		
 		
 	</PageLayout>
 
@@ -48,6 +67,8 @@
 	import Card from '../../components/UI/Card.vue';
 	import PortfolioCard from '../../components/blocks/PortfolioCard.vue';
 	import { IconBrandGithub } from '@tabler/icons-vue';
+
+	import Tag from '../../components/UI/Tag.vue';
 
 	type TagItem = {
 		type: string,

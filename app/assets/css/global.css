@@ -79,7 +79,7 @@ p, h1, div, section, menu, button, a{
 } */
 
 #menu{
-	@apply min-w-[65%] h-screen fixed top-0 shadow-lg z-20 bg-phone-menu-background lg:bg-transparent lg:shadow-none lg:h-auto lg:static lg:left-0;
+	@apply min-w-[70%] h-screen fixed top-0 shadow-lg z-20 bg-phone-menu-background lg:bg-transparent lg:shadow-none lg:h-auto lg:static lg:left-0;
 }
 #menu{
 	/* now make it float for lg */
@@ -125,7 +125,7 @@ p, h1, div, section, menu, button, a{
 .skills .card-tech img{
 	@apply w-[100px]!;
 }
-.portfolio-content ul li{
+.portfolio-content ul li, .portolfio-points li{
 	@apply mt-2;
 }
 .portfolio-content ul li strong{

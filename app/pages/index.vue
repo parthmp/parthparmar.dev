@@ -31,11 +31,7 @@
 		<br>
 		<br>
 		<InputButton to="/contact" text="Ready to Start Your Project?" add-classes="btn-lg btn-icon-inline"></InputButton>
-		<br>
-		<br>
-		<br>
-		<br>
-		<br>
+	
   </span>
 </template>
 

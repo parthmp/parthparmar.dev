@@ -1,7 +1,7 @@
 <template>
-	<div class="mb-20 portfolio-content">
-		
-		<div class="flex flex-col lg:flex-row gap-5">
+	<div class="portfolio-content">
+		<p class="poppins-medium text-primary! text-shadow-primary! text-shadow-2xs">550+ commits so far across both repositories <span class="italic!">(And counting!)</span></p>
+		<div class="flex flex-col lg:flex-row gap-5 mt-2">
 			<a href="https://github.com/parthmp/deskmint-frontend" target="_blank" class="primary-btn s-primary-btn btn-icon btn-icon shadow-none!">
 				<span>View Frontend Source Code</span>
 				<IconBrandGithub></IconBrandGithub>
@@ -14,13 +14,13 @@
 
 		<h2 class="mt-7 text-3xl poppins-medium">My role</h2>
 		<p class="mt-2">
-			Sole developer of DeskMint, responsible for the full stack—designing and building the frontend with Vue.js, backend with Laravel, and implementing SPA and PWA functionality across all modules.
+			Sole developer of DeskMint, responsible for the full stack - designing and building the frontend with Vue.js, backend with Laravel, and implementing SPA and PWA functionality across all modules.
 		</p>
 
 		<h2 class="mt-7 text-3xl poppins-medium">Notable functionalities/code <span class="italic!">(Currently Present in the Codebase)</span></h2>
 		<ul class="list-disc ml-7 mt-2">
 			<li><strong class="poppins-medium">Dynamic custom fields with user-defined data types - </strong> Users can create their own data models on the fly, not just store data but define the structure itself</li>
-			<li><strong class="poppins-medium">Bank-grade authentication system - </strong> Custom secure login with access/refresh tokens and unique device fingerprinting</li>
+			<li><strong class="poppins-medium">Bank grade authentication system - </strong> Custom secure login with access/refresh tokens and unique device fingerprinting</li>
 			<li><strong class="poppins-medium">Custom frontend DataTable component - </strong> Handles both static and dynamic data with 3rd-party plugin-level sophistication</li>
 			<li><strong class="poppins-medium">Dependency injection & traits - </strong> Modular, reusable, and loosely coupled codebase</li>
 			<li><strong class="poppins-medium">Granular field visibility controls - </strong>Users can show/hide any field (including custom fields) across all functionalities</li>

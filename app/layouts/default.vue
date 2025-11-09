@@ -50,7 +50,7 @@
 				<slot></slot>
 					
 			</main>
-			<div class="footer text-center">
+			<div class="footer text-center mt-17">
 				<p>People who inspire me to do better everyday</p>
 				<div class="w-fit m-auto">
 					<div class="mt-2 flex flex-col lg:flex-row gap-5">
