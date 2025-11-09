@@ -2,7 +2,7 @@ export const useProjects = () => {
   const projects = {
 		deskmint: {
 			title: 'DeskMint',
-			description: 'An in-development modular productivity platform designed to unify clients, tasks, chats, and invoicing into a smart, customizable workspace, with plans for payments and advanced invoicing features.',
+			description: 'DeskMint is being developed to centralize client communication, manage invoices, and securely store documents in an encrypted vault, helping companies keep interactions and data organized and transparent.',
 			tags: [
 				{ type : 'success', text : 'In Development' },
 				{ type : 'primary', text : 'Dependency Injection' },
@@ -21,16 +21,16 @@ export const useProjects = () => {
 			content : 'DeskMint'
 		},
 		social: {
-			title: 'DeskMint',
-			description: 'DeskMint is a modular productivity platform...',
+			title: 'Social',
+			description: 'Social is a modular productivity platform...',
 			tags: [
 				{ type: 'success', text: 'Vue' },
 				{ type: 'primary', text: 'Laravel' }
 			],
 			images: [
-				{ src: '/images/portfolio/deskmint/deskmint-1.png', alt: 'Dashboard' },
-				{ src: '/images/portfolio/deskmint/deskmint-2.png', alt: 'Tasks' },
-				{ src: '/images/portfolio/deskmint/deskmint-3.png', alt: 'Chat' }
+				{ src: '/images/portfolio/social/social-1.png', alt: 'Dashboard' },
+				{ src: '/images/portfolio/social/social-2.png', alt: 'Tasks' },
+				{ src: '/images/portfolio/social/social-3.png', alt: 'Chat' }
 			],
 			content: `
 				<p>Full project details here...</p>

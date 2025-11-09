@@ -12,7 +12,7 @@
 							DeskMint
 						</template>
 						<template #description>
-							DeskMint is an in-development modular productivity platform designed to unify clients, tasks, chats, and invoicing into one smart, customizable workspace.
+							Deskmint is being developed to centralize client communication, manage invoices, and securely store documents in an encrypted vault, helping companies keep interactions and data organized and transparent.
 						</template>
 						<template #additional>
 							<div class="flex flex-col md:flex-row gap-5">
