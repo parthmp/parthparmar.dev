@@ -125,6 +125,12 @@ p, h1, div, section, menu, button, a{
 .skills .card-tech img{
 	@apply w-[100px]!;
 }
+.portfolio-content ul li{
+	@apply mt-2;
+}
+.portfolio-content ul li strong{
+	@apply text-primary! text-shadow-primary text-shadow-lg/12 dark:text-primary-burnt!;
+}
 /* define scrolled behavior with breakpoint */
 @media (min-width: 1024px) { /* lg breakpoint by default */
   .scrolled #menu {
@@ -143,7 +149,7 @@ p, h1, div, section, menu, button, a{
 	@apply lg:border-b-5 lg:border-solid lg:border-primary!;
 }
 .second-header{
-	@apply text-center lg:text-left text-4xl border-b-3 border-solid border-primary pb-2;
+	@apply text-3xl lg:text-4xl border-b-3 border-solid border-primary pb-2;
 	font-family: "Poppins", sans-serif;
 	font-weight: 500;
 	font-style: normal;

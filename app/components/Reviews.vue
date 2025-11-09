@@ -1,6 +1,6 @@
 <template>
 	<div>
-		<div class="reviews text-center lg:text-left">
+		<div class="reviews">
 			<h2 class="second-header">Verified Reviews From <a href="https://www.upwork.com/freelancers/~01bed55ae9935fc4d2" _target="_blank" class="text-primary! underline hover:text-primary-dark!">Upwork</a></h2>
 			<br>
 			<Card>

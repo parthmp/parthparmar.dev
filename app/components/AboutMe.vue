@@ -1,5 +1,5 @@
 <template>
-	<div class="about-me text-center lg:text-left">
+	<div class="about-me">
 		<h2 class="second-header">About me</h2>
 		<br>
 		<p>I'm a fullstack programmer with over 10 years of experience building web applications and software solutions for companies and clients worldwide. I specialize in creating robust, scalable systems using modern technologies like Laravel & Vue.js.</p>

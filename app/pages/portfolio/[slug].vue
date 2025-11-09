@@ -28,11 +28,12 @@
 
 		<p class="text-lg mb-8 mt-8">{{ project.description }}</p>
 		
-		<div class="tags mb-8">
+		<p class="poppins-bold">Technologies/Tech Stack</p>
+		<div class="tags mb-8 mt-1!">
 			<Tag v-for="tag in project.tags" :key="tag.text" :type="tag.type">{{ tag.text }}</Tag>
 		</div>
-
-		<div class="mt-12 prose prose-lg dark:prose-invert">
+		<p class="poppins-medium text-primary! text-shadow-primary! text-shadow-2xs">550+ commits so far across both repositories <span class="italic!">(And counting!)</span></p>
+		<div class="mt-5 prose prose-lg dark:prose-invert">
 			<component :is="contentComponent"></component>
 		</div>
   </PageLayout>

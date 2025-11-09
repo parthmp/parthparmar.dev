@@ -1,6 +1,6 @@
 <template>
 	
-	<div class="skills text-center lg:text-left">
+	<div class="skills">
 		<h2 class="second-header">Techologies I've Worked With</h2>
 		<br>
 		<h2 class="text-xl lg:text-2xl mb-2">Languages | Programming + Markup + Styling (Primary - Current)</h2>

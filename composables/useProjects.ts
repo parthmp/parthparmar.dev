@@ -14,9 +14,10 @@ export const useProjects = () => {
 				{ type : 'success', text : 'PWA' }
 			],
 			images: [
-				{ src: '/images/portfolio/deskmint/deskmint-1.png', alt: 'Dashboard' },
-				{ src: '/images/portfolio/deskmint/deskmint-2.png', alt: 'Tasks' },
-				{ src: '/images/portfolio/deskmint/deskmint-3.png', alt: 'Chat' }
+				{ src: '/images/portfolio/deskmint/deskmint-1.png', alt: 'Deskmint dashboard showing clients' },
+				{ src: '/images/portfolio/deskmint/deskmint-2.png', alt: 'Deskmint invoice creation functionality' },
+				{ src: '/images/portfolio/deskmint/deskmint-3.png', alt: 'Deskmint various settings' },
+				{ src: '/images/portfolio/deskmint/deskmint-4.png', alt: 'Deskmint dashboard showing custom fields arrangement allowing users to manage searchables and sorting of fields' }
 			],
 			content : 'DeskMint'
 		},
