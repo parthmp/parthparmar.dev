@@ -1,6 +1,81 @@
 <template>
-  <div class="p-8">
-    <h1>index</h1>
-    <p>Coming soon.</p>
-  </div>
+	<PageLayout>
+		<PageHeader>
+			Portfolio
+		</PageHeader>
+		<FeaturedWork :show-header="false"></FeaturedWork>
+		<div class="mt-5! grid grid-cols-12 gap-5 mb-20">
+			<div class="col-span-12 lg:col-span-6">
+				<Card>
+					<PortfolioCard url="/portfolio/mproject" loading="eager" image="/images/portfolio/mproject/mproject-1.png" :image-attrs="{ class: 'w-full rounded-lg', alt: 'Real-time push notification example in two languages using MQTT' }" :tags="tags.potton">
+						<template #header>
+							Bilingual Municipal Notification & Posting System
+						</template>
+						<template #description>
+							Developed a bilingual municipal communication platform with a native Java Android app and Angular frontend. Implemented MQTT for real-time push notifications, enabling administrators to publish announcements and posts in multiple languages with instant delivery to users.
+						</template>
+					</PortfolioCard>
+				</Card>
+			</div>
+			<div class="col-span-12 lg:col-span-6">
+				<Card>
+					<PortfolioCard url="/portfolio/acme" loading="eager" image="/images/portfolio/acme/acme-1.png" :image-attrs="{ class: 'w-full rounded-lg', alt: 'Screenshot of PHP shopping basket application demonstrating gold standard architecture' }" :tags="tags.acme">
+						<template #header>
+							Gold Standard PHP Shopping Basket Demo
+						</template>
+						<template #description>
+							A demonstration project built to showcase gold-standard software engineering practices in PHP. The system simulates a shopping basket that emphasizes clean architecture, type safety, and test-driven design rather than end-user features.
+						</template>
+						<template #additional>
+								<a href="https://github.com/parthmp/acme-widget-co" target="_blank" class="primary-btn s-primary-btn btn-icon btn-icon shadow-none!">
+									<span>Source Code</span>
+									<IconBrandGithub></IconBrandGithub>
+								</a>
+						</template>
+					</PortfolioCard>
+				</Card>
+			</div>
+		</div>
+		
+	</PageLayout>
+
 </template>
+<script lang="ts" setup>
+
+	import FeaturedWork from '../../components/FeaturedWork.vue';
+	import PageLayout from '../../components/UI/PageLayout.vue';
+	import PageHeader from '../../components/UI/PageHeader.vue';
+	import Card from '../../components/UI/Card.vue';
+	import PortfolioCard from '../../components/blocks/PortfolioCard.vue';
+	import { IconBrandGithub } from '@tabler/icons-vue';
+
+	type TagItem = {
+		type: string,
+		text: string	
+	};
+
+	type TagType = {
+		potton : TagItem[],
+		acme : TagItem[],
+	};
+
+	const tags : TagType = {
+		potton : [
+			{ type : 'success', text : 'Java' },
+			{ type : 'primary', text : 'MQTT' },
+			{ type : 'success', text : 'Angular' },
+			{ type : 'primary', text : 'Laravel' },
+			{ type : 'blue', text : 'MySQL' },
+			{ type : 'light-blue', text : 'Firebase' }
+		],
+		acme : [ 
+			{ type : 'success', text : 'Dependency Injection' },
+			{ type : 'primary', text : 'Docker' },
+			{ type : 'blue', text : 'Docker Compose' },
+			{ type : 'light-blue', text : 'PHPUnit' },
+			{ type : 'success', text : 'PHPStan' }
+		]
+	};
+
+
+</script>

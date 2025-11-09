@@ -1,11 +1,13 @@
 <template>
 	<div class="featured-work">
-		<h2 class="second-header">Featured Work</h2>
-		<br>
+		<span v-if="props.showHeader">
+			<h2 class="second-header">Featured Work</h2>
+			<br>
+		</span>
 		<div class="grid grid-cols-12 gap-5">
 			<div class="col-span-12 lg:col-span-12 xl:col-span-4">
 				<Card>
-					<PortfolioCard url="/portfolio/deskmint" loading="preload" image="/images/portfolio/deskmint/deskmint-1.png" :image-attrs="{ class: 'w-full rounded-lg', alt: 'DeskMint Portfolio' }" :tags="tags.deskmint">
+					<PortfolioCard url="/portfolio/deskmint" loading="preload" image="/images/portfolio/deskmint/deskmint-1.png" :image-attrs="{ class: 'w-full rounded-lg', alt: 'DeskMint dashboard showing view of clients' }" :tags="tags.deskmint">
 						<template #header>
 							DeskMint
 						</template>
@@ -30,7 +32,7 @@
 			</div>
 			<div class="col-span-12 lg:col-span-6 xl:col-span-4">
 				<Card>
-					<PortfolioCard url="/portfolio/social" loading="preload" image="/images/portfolio/social/social-1.png" :image-attrs="{ class: 'w-full rounded-lg', alt: 'DeskMint Portfolio' }" :tags="tags.social">
+					<PortfolioCard url="/portfolio/social" loading="preload" image="/images/portfolio/social/social-1.png" :image-attrs="{ class: 'w-full rounded-lg', alt: 'Profile view showing verified account details in closed community social network' }" :tags="tags.social">
 						<template #header>
 							Social Media PWA
 						</template>
@@ -43,7 +45,7 @@
 			</div>
 			<div class="col-span-12 lg:col-span-6 xl:col-span-4">
 				<Card>
-					<PortfolioCard url="/portfolio/refb2b" loading="preload" image="/images/portfolio/refb2b/refb2b-1.png" :image-attrs="{ class: 'w-full rounded-lg', alt: 'DeskMint Portfolio' }" :tags="tags.refb2b">
+					<PortfolioCard url="/portfolio/refb2b" loading="preload" image="/images/portfolio/refb2b/refb2b-1.png" :image-attrs="{ class: 'w-full rounded-lg', alt: 'ReferralsB2B interactive map showing real estate agents and search functionality' }" :tags="tags.refb2b">
 						<template #header>
 							Real Estate Referral Portal
 						</template>
@@ -64,6 +66,13 @@
 	import { IconBrandGithub, IconEye } from '@tabler/icons-vue';
 
 	import PortfolioCard from './blocks/PortfolioCard.vue';
+
+	const props = defineProps({
+		showHeader : {
+			type : Boolean,
+			default : () => true
+		}
+	});
 
 	type TagItem = {
 		
