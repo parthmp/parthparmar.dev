@@ -25,33 +25,50 @@
 			@prev="prevImage"
 		/>
 
-		<p class="text-lg mb-8">{{ project.description }}</p>
+		<p class="text-lg mb-8 mt-8">{{ project.description }}</p>
 		
 		<div class="tags mb-8">
 			<Tag v-for="tag in project.tags" :key="tag.text" :type="tag.type">{{ tag.text }}</Tag>
 		</div>
 
 		<div class="mt-12 prose prose-lg dark:prose-invert">
-			<h3>About This Project</h3>
-			<p v-html="project.content"></p>
+			<component :is="contentComponent"></component>
 		</div>
   </PageLayout>
 </template>
-<script setup>
+<script lang="ts" setup>
 
-import { ref } from 'vue';
+import { computed, ref } from 'vue';
 import Lightbox from '../../components/Lightbox.vue';
 import PageLayout from '../../components/UI/PageLayout.vue';
 import PageHeader from '../../components/UI/PageHeader.vue';
 import Tag from '../../components/UI/Tag.vue';
 import { useProjects } from '../../../composables/useProjects';
+import { createError, useRoute } from 'nuxt/app';
+import { Component as VueComponent } from 'vue';
+
+import DeskMint from '../../components/content/DeskMint.vue';
 
 const route = useRoute();
 
 const { getProject } = useProjects();
 
+const slug = route.params.slug;
 
-const project = getProject(route.params.slug);
+const pagesSlugs = ['deskmint', 'social', 'mproject', 'refb2b', 'acme'];
+
+const components : VueComponent = {
+	DeskMint
+};
+
+if(!pagesSlugs.includes(slug)){
+	throw createError({
+		statusCode: 404,
+		statusMessage: 'Page Not Found',
+	});
+}
+
+const project = getProject(slug);
 
 const lightboxOpen = ref(false);
 const currentImageIndex = ref(0);
@@ -68,4 +85,8 @@ const nextImage = () => {
 const prevImage = () => {
 	currentImageIndex.value = (currentImageIndex.value - 1 + project.images.length) % project.images.length;
 }
+
+const contentComponent = computed(() : any => {
+	return components[project.content];
+});
 </script>
