@@ -4,15 +4,18 @@
 
 		<div class="grid grid-cols-12 gap-5 portfolio-thumbs">
 			<div class="col-span-6 lg:col-span-3" v-for="(image, index) in project.images" :key="index">
-				<div @click="openLightbox(index)" class="cursor-pointer hover:opacity-80 transition-opacity">
-				<NuxtPicture
-				class=" max-h-[150px]!"
-					:src="image.src"
-					:img-attrs="{ class: 'w-full rounded-lg', alt: image.alt }"
-					format="webp"
-					loading="lazy"
-					sizes="100vw md:768px lg:1024px"
-					/>
+				<div @click="openLightbox(index)" class="cursor-pointer hover:opacity-80 transition-opacity" v-if="!image.video">
+					<NuxtPicture
+					class=" max-h-[150px]!"
+						:src="image.src"
+						:img-attrs="{ class: 'w-full rounded-lg', alt: image.alt }"
+						format="webp"
+						loading="lazy"
+						sizes="100vw md:768px lg:1024px"
+						/>
+				</div>
+				<div v-if="image.video">
+					<div style="left: 0; width: 100%; height: 0; position: relative; padding-bottom: 56.25%;"><iframe :src="image.src" style="top: 0; left: 0; width: 100%; height: 100%; position: absolute; border: 0;" allowfullscreen scrolling="no" allow="accelerometer *; clipboard-write *; encrypted-media *; gyroscope *; picture-in-picture *; web-share *;" referrerpolicy="strict-origin"></iframe></div>
 				</div>
 			</div>
 			
@@ -52,6 +55,9 @@ import { Component as VueComponent } from 'vue';
 
 import DeskMint from '../../components/content/DeskMint.vue';
 import Social from '../../components/content/Social.vue';
+import RefB2B from '../../components/content/RefB2B.vue';
+import Mproject from '../../components/content/Mproject.vue';
+import Acme from '../../components/content/Acme.vue';
 
 const route = useRoute();
 
@@ -63,7 +69,10 @@ const pagesSlugs = ['deskmint', 'social', 'mproject', 'refb2b', 'acme'];
 
 const components : VueComponent = {
 	DeskMint,
-	Social
+	Social,
+	RefB2B,
+	Mproject,
+	Acme
 };
 
 if(!pagesSlugs.includes(slug)){

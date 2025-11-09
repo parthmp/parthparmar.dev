@@ -43,67 +43,55 @@ export const useProjects = () => {
 			content: 'Social'
 		},
 		mproject: {
-			title: 'Real Estate Referral Portal',
-			description: 'DeskMint is a modular productivity platform...',
+			title: 'Municipal Platform',
+			description: 'A municipal communication and information platform built with Laravel and Angular, designed to help local administrations publish categorized posts, announcements, and updates directly to citizens through a native Android app with real-time notifications.',
 			tags: [
-				{ type: 'success', text: 'Vue' },
-				{ type: 'primary', text: 'Laravel' }
+				{ type: 'yellow', text: 'Angular' },
+				{ type: 'primary', text: 'Laravel' },
+				{ type: 'blue', text: 'Bootstrap' },
+				{ type: 'light-blue', text: 'MySQL' },
+				{ type: 'primary', text: 'Java' },
+				{ type: 'yellow', text: 'MQTT' },
+				{ type: 'primary', text: 'Android' }
 			],
 			images: [
-				{ src: '/images/portfolio/deskmint/deskmint-1.png', alt: 'Dashboard' },
-				{ src: '/images/portfolio/deskmint/deskmint-2.png', alt: 'Tasks' },
-				{ src: '/images/portfolio/deskmint/deskmint-3.png', alt: 'Chat' }
+				{ src: '/images/portfolio/mproject/mproject-1.png', alt: 'Dashboard' },
+				{ src: 'https://www.youtube.com/embed/tpd4dn6LtRg', alt: '', video:true }
 			],
-			content: `
-				<p>Full project details here...</p>
-				<h4>Key Features</h4>
-				<ul>
-				<li>Feature 1</li>
-				<li>Feature 2</li>
-				</ul>
-			`
+			content: 'Mproject'
 		},
 		acme: {
 			title: 'Gold Standard Programming Practices - PHP',
-			description: 'DeskMint is a modular productivity platform...',
+			description: 'A demonstration project written in PHP that simulates a shopping basket for an imaginary widget company. It focuses on clarity, modular design, and correctness - implementing realistic e-commerce logic such as pricing, delivery calculation, and discount offers - while adhering to modern software engineering standards',
 			tags: [
-				{ type: 'success', text: 'Vue' },
-				{ type: 'primary', text: 'Laravel' }
+				{ type: 'success', text: 'PHP' },
+				{ type: 'primary', text: 'Composer' },
+				{ type : 'blue', text : 'Dependency Injection' },
+				{ type : 'yellow', text : 'Docker' },
+				{ type : 'light-blue', text : 'Docker Compose' },
+				{ type : 'success', text : 'PHPUnit' },
+				{ type : 'primary', text : 'PHPStan' },
 			],
 			images: [
-				{ src: '/images/portfolio/deskmint/deskmint-1.png', alt: 'Dashboard' },
-				{ src: '/images/portfolio/deskmint/deskmint-2.png', alt: 'Tasks' },
-				{ src: '/images/portfolio/deskmint/deskmint-3.png', alt: 'Chat' }
+				{ src: '/images/portfolio/acme/acme-1.png', alt: 'Dashboard' }
 			],
-			content: `
-				<p>Full project details here...</p>
-				<h4>Key Features</h4>
-				<ul>
-				<li>Feature 1</li>
-				<li>Feature 2</li>
-				</ul>
-			`
+			content:'Acme'
 		},
 		refb2b: {
-			title: 'Municipality Project',
-			description: 'DeskMint is a modular productivity platform...',
+			title: 'Real Estate Referral Portal ',
+			description: 'A real estate agent referral and discovery platform built with Laravel and Bootstrap, designed to connect real estate professionals through searchable profiles and an interactive map interface powered by OpenStreetMap, while providing administrators with complete control over platform data and operations.',
 			tags: [
-				{ type: 'success', text: 'Vue' },
-				{ type: 'primary', text: 'Laravel' }
+				{ type: 'primary', text: 'Laravel' },
+				{ type: 'blue', text: 'Bootstrap' },
+				{ type: 'primary', text: 'MySQL' },
+				{ type: 'yellow', text: 'OpenStreetMap' },
+				{ type: 'light-blue', text: 'Leaflet' }
 			],
 			images: [
-				{ src: '/images/portfolio/deskmint/deskmint-1.png', alt: 'Dashboard' },
-				{ src: '/images/portfolio/deskmint/deskmint-2.png', alt: 'Tasks' },
-				{ src: '/images/portfolio/deskmint/deskmint-3.png', alt: 'Chat' }
+				{ src: '/images/portfolio/refb2b/refb2b-2.png', alt: 'Dashboard' },
+				{ src: '/images/portfolio/refb2b/refb2b-3.png', alt: 'Tasks' }
 			],
-			content: `
-				<p>Full project details here...</p>
-				<h4>Key Features</h4>
-				<ul>
-				<li>Feature 1</li>
-				<li>Feature 2</li>
-				</ul>
-			`
+			content: 'RefB2B'
 		}
 	}
   

@@ -9,7 +9,7 @@
 				<Card>
 					<PortfolioCard url="/portfolio/mproject" loading="eager" image="/images/portfolio/mproject/mproject-1.png" :image-attrs="{ class: 'w-full rounded-lg', alt: 'Real-time push notification example in two languages using MQTT' }" :tags="tags.potton">
 						<template #header>
-							Bilingual Municipal Notification & Posting System
+							Municipal Platform
 						</template>
 						<template #description>
 							Developed a bilingual municipal communication platform with a native Java Android app and Angular frontend. Implemented MQTT for real-time push notifications, enabling administrators to publish announcements and posts in multiple languages with instant delivery to users.
@@ -21,7 +21,7 @@
 				<Card>
 					<PortfolioCard url="/portfolio/acme" loading="eager" image="/images/portfolio/acme/acme-1.png" :image-attrs="{ class: 'w-full rounded-lg', alt: 'Screenshot of PHP shopping basket application demonstrating gold standard architecture' }" :tags="tags.acme">
 						<template #header>
-							Gold Standard PHP Shopping Basket Demo
+							Gold Standard Programming Practices - PHP
 						</template>
 						<template #description>
 							A demonstration project built to showcase gold-standard software engineering practices in PHP. The system simulates a shopping basket that emphasizes clean architecture, type safety, and test-driven design rather than end-user features.
