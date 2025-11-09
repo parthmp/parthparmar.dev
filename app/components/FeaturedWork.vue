@@ -10,7 +10,7 @@
 							DeskMint
 						</template>
 						<template #description>
-							DeskMint is a modular productivity platform that unifies clients, tasks, chats, and invoicing into one smart, customizable workspace.
+							DeskMint is an in-development modular productivity platform designed to unify clients, tasks, chats, and invoicing into one smart, customizable workspace.
 						</template>
 						<template #additional>
 							<div class="flex flex-col md:flex-row gap-5">
@@ -35,7 +35,7 @@
 							Social Media PWA
 						</template>
 						<template #description>
-							Private social network for a closed community, featuring OTP login, searchable profiles, verified accounts, and company pages.
+							A private social network for a closed community, featuring OTP login, searchable profiles, verified accounts, and pages for companies and trusts.
 						</template>
 					</PortfolioCard>
 				</Card>
@@ -48,7 +48,7 @@
 							Real Estate Referral Portal
 						</template>
 						<template #description>
-							Referralsb2b is a platform that helps users find and connect with real estate agents through searchable profiles and an interactive map.
+							ReferralsB2B is a platform that helps users find and connect with real estate agents through searchable profiles and an interactive map.
 						</template>
 					</PortfolioCard>
 				</Card>
@@ -65,7 +65,20 @@
 
 	import PortfolioCard from './blocks/PortfolioCard.vue';
 
-	const tags = {
+	type TagItem = {
+		
+		type: string,
+		text: string
+			
+	};
+
+	type TagType = {
+		deskmint : TagItem[],
+		social : TagItem[],
+		refb2b : TagItem[]
+	};
+
+	const tags : TagType = {
 		deskmint : [
 			{ type : 'success', text : 'In Development' },
 			{ type : 'primary', text : 'Dependency Injection' },

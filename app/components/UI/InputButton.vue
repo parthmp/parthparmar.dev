@@ -9,10 +9,11 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue';
+import { Component as VueComponent } from 'vue';
 
 import { IconArrowUpRight, IconFileCv, IconEye } from '@tabler/icons-vue';
 
-const components = {
+const components : VueComponent = {
 	IconArrowUpRight,
 	IconFileCv,
 	IconEye
@@ -45,7 +46,7 @@ const props = defineProps({
 	}
 });
 
-const iconComponent = computed(() => {
+const iconComponent = computed(() : any => {
 	return components[props.icon] || IconArrowUpRight;
 });
 </script>

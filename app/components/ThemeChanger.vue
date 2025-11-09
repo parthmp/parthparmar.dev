@@ -20,25 +20,25 @@
 	const theme = useThemeStore();
 
 	// Computed value to reflect current theme
-	const themeName = computed(() => theme.getTheme ?? 'light');
+	const themeName = computed(() : string => theme.getTheme ?? 'light');
 
 	// Initialize theme from localStorage
-	onMounted(() => {
+	onMounted(() : void => {
 		theme.initTheme()
 		applyThemeClass(theme.theme);
 	})
 
 	// Toggle theme
-	const setCurrentTheme = () => {
+	const setCurrentTheme = () : void => {
 		const newTheme = theme.theme === 'light' ? 'dark' : 'light';
 		theme.setTheme(newTheme);
 		applyThemeClass(newTheme);
 	}
 
 	// Helper to add/remove Tailwind dark class
-	const applyThemeClass = (theme: string) => {
-	if(process.client){
-		document.documentElement.classList.toggle('dark', theme === 'dark')
+	const applyThemeClass = (theme: string) : void => {
+		if(process.client){
+			document.documentElement.classList.toggle('dark', theme === 'dark')
+		}
 	}
-}
 </script>

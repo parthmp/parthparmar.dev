@@ -40,8 +40,7 @@
 </template>
 
 <script lang="ts" setup>
-
-	import { IconEye } from '@tabler/icons-vue';
+	
 	import Tag from '../UI/Tag.vue';
 	import InputButton from '../UI/InputButton.vue';
 	

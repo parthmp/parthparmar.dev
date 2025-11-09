@@ -152,10 +152,25 @@
 	import CloudflareSvg from '~/assets/svg/tech/cloudflare.svg';
 	import LinuxSvg from '~/assets/svg/tech/linux.svg';
 	import WindowsSvg from '~/assets/svg/tech/windows.svg';
+	import { Component as VueComponent } from 'vue';
 
-	
+	type TechItem = {
+		name: string,
+		icon: VueComponent,
+		url?: string
+	};
 
-	const techs = {
+	type TechType = {
+		languages1: TechItem[],
+		languages2: TechItem[],
+		db: TechItem[],
+		frameworks: TechItem[],
+		tools: TechItem[],
+		server: TechItem[],
+		os: TechItem[]
+	};
+
+	const techs : TechType = {
 		languages1 : [
 			{ name: 'JavaScript', icon: JsSvg },
 			{ name: 'TypeScript', icon: TsSvg },
