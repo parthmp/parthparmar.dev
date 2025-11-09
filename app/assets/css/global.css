@@ -27,10 +27,10 @@
 
 @layer base {
   body {
-    @apply bg-[url('../images/bg.svg')] bg-size-[120px];
+    @apply bg-[url('../../../images/bg.svg')] bg-size-[120px];
   }
   .dark body {
-    @apply bg-[url('../images/bg-dark.svg')] bg-size-[120px];
+    @apply bg-[url('../../../images/bg-dark.svg')] bg-size-[120px];
   }
 }
 /* themes */

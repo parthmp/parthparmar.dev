@@ -40,7 +40,7 @@
 						</NuxtLink>
 					</li>
 				</ul>
-				<NuxtLink to="/contact" class="primary-btn flex gap-1 justify-center m-3 lg:hidden">Let's talk
+				<NuxtLink to="/contact" class="primary-btn flex gap-1 justify-center m-3 lg:hidden" @click="data.isShowingPhoneMenu = false">Let's talk
 					<IconArrowUpRight :size="24"></IconArrowUpRight>
 				</NuxtLink>
 			</div>
@@ -59,7 +59,7 @@
 						<a href="https://en.wikipedia.org/wiki/Dennis_Ritchie" class="text-primary! underline hover:text-primary-dark!" target="_blank">Dennis Ritchie</a>
 					</div>
 				</div>
-				<p class="mt-3">
+				<p class="mt-5">
 					<span class="flex gap-1 items-center justify-center">
 						<span>Made with </span>
 						<span class="text-primary">

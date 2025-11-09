@@ -1,6 +1,6 @@
 <template>
 	<div class="lg:w-fit" :class="{'m-auto' : center}">
-		<NuxtLink :to="to" class="btn-icon m-auto" :class="[addClasses, {'primary-btn' : primary, 'primary-btn s-primary-btn' : !primary}]">
+		<NuxtLink :to="to" class="btn-icon m-auto text-center!" :class="[addClasses, {'primary-btn' : primary, 'primary-btn s-primary-btn' : !primary}]">
 			{{ text }}
 			<component :is="iconComponent"></component>
 		</NuxtLink>

@@ -196,7 +196,7 @@
 		],
 		server : [
 			{ name: 'DigitalOcean', icon: DOSvg},
-			{ name: 'VultrSvg', icon: VultrSvg },
+			{ name: 'Vultr', icon: VultrSvg },
 			{ name: 'Cloudflare', icon: CloudflareSvg }
 		],
 		os : [

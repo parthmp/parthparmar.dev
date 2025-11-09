@@ -18,9 +18,9 @@
 			</div>
 			<div class="col-span-12 mt-8 lg:mt-0 lg:col-span-3">
 				<NuxtPicture
-					src="/images/parth.jpg"
+					src="/images/parth-parmar-programmer-web-developer-surat-india.jpg"
 					:img-attrs="{ class: 'w-full rounded-full', alt: 'parth parmar, programmer, surat, gujarat, india, web & software programmer, digitalsitara, deskmint' }"
-					sizes="100vw md:768px lg:1024px"
+					sizes="100vw sm:400px md:768px lg:1024px"
 					format="webp"
 					preload
 				/>

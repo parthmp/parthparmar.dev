@@ -6,6 +6,7 @@
 node_modules/
 .nitro/
 build/
+debug/
 
 # Static site output (SSG)
 dist/
