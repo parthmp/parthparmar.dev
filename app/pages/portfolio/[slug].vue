@@ -2,10 +2,11 @@
   <PageLayout>
     <PageHeader>{{ project.title }}</PageHeader>
 
-		<div class="grid grid-cols-12 gap-5">
+		<div class="grid grid-cols-12 gap-5 portfolio-thumbs">
 			<div class="col-span-6 lg:col-span-3" v-for="(image, index) in project.images" :key="index">
 				<div @click="openLightbox(index)" class="cursor-pointer hover:opacity-80 transition-opacity">
 				<NuxtPicture
+				class=" max-h-[150px]!"
 					:src="image.src"
 					:img-attrs="{ class: 'w-full rounded-lg', alt: image.alt }"
 					format="webp"
@@ -50,6 +51,7 @@ import { createError, useRoute } from 'nuxt/app';
 import { Component as VueComponent } from 'vue';
 
 import DeskMint from '../../components/content/DeskMint.vue';
+import Social from '../../components/content/Social.vue';
 
 const route = useRoute();
 
@@ -60,7 +62,8 @@ const slug = route.params.slug;
 const pagesSlugs = ['deskmint', 'social', 'mproject', 'refb2b', 'acme'];
 
 const components : VueComponent = {
-	DeskMint
+	DeskMint,
+	Social
 };
 
 if(!pagesSlugs.includes(slug)){

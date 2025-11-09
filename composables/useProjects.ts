@@ -22,28 +22,28 @@ export const useProjects = () => {
 			content : 'DeskMint'
 		},
 		social: {
-			title: 'Social',
-			description: 'Social is a modular productivity platform...',
+			title: 'Social Media PWA',
+			description: 'A private community and social platform built with Laravel and Vue, designed to help organizations manage member profiles, posts, and internal interactions while maintaining complete administrative oversight and financial transparency. The application is built as a Progressive Web App (PWA) and also packaged for Android using Capacitor.',
 			tags: [
 				{ type: 'success', text: 'Vue' },
-				{ type: 'primary', text: 'Laravel' }
+				{ type: 'primary', text: 'Laravel' },
+				{ type: 'blue', text: 'Bootstrap' },
+				{ type: 'light-blue', text: 'MySQL' },
+				{ type: 'yellow', text: 'Firebase Cloud Messaging' },
+				{ type: 'primary', text: 'Capacitor' },
+				{ type: 'blue', text: 'PWA' },
+				{ type: 'success', text: 'Android' }
 			],
 			images: [
-				{ src: '/images/portfolio/social/social-1.png', alt: 'Dashboard' },
-				{ src: '/images/portfolio/social/social-2.png', alt: 'Tasks' },
-				{ src: '/images/portfolio/social/social-3.png', alt: 'Chat' }
+				{ src: '/images/portfolio/social/social-2.png', alt: 'Dashboard' },
+				{ src: '/images/portfolio/social/social-3.png', alt: 'Tasks' },
+				{ src: '/images/portfolio/social/social-4.png', alt: 'Chat' },
+				{ src: '/images/portfolio/social/social-5.png', alt: 'Chat' }
 			],
-			content: `
-				<p>Full project details here...</p>
-				<h4>Key Features</h4>
-				<ul>
-				<li>Feature 1</li>
-				<li>Feature 2</li>
-				</ul>
-			`
+			content: 'Social'
 		},
 		mproject: {
-			title: 'DeskMint',
+			title: 'Real Estate Referral Portal',
 			description: 'DeskMint is a modular productivity platform...',
 			tags: [
 				{ type: 'success', text: 'Vue' },
@@ -64,7 +64,7 @@ export const useProjects = () => {
 			`
 		},
 		acme: {
-			title: 'DeskMint',
+			title: 'Gold Standard Programming Practices - PHP',
 			description: 'DeskMint is a modular productivity platform...',
 			tags: [
 				{ type: 'success', text: 'Vue' },
@@ -85,7 +85,7 @@ export const useProjects = () => {
 			`
 		},
 		refb2b: {
-			title: 'DeskMint',
+			title: 'Municipality Project',
 			description: 'DeskMint is a modular productivity platform...',
 			tags: [
 				{ type: 'success', text: 'Vue' },
