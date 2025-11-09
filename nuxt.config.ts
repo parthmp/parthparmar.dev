@@ -54,12 +54,16 @@ export default defineNuxtConfig({
           innerHTML: `
             (function() {
               const savedTheme = localStorage.getItem('theme');
-              if (!savedTheme) localStorage.setItem('theme', 'system');
+              if (!savedTheme) localStorage.setItem('theme', 'light');
               const { classList } = document.documentElement;
               if (savedTheme === 'system' || !savedTheme) {
                 const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-                if (isDark) classList.add('dark');
+                if (isDark){
+					localStorage.setItem('theme', 'dark');
+					classList.add('dark');
+				}
               } else if (savedTheme === 'dark') {
+			   localStorage.setItem('theme', 'dark');
                 classList.add('dark');
               }
             })();

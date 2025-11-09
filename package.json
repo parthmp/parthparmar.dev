@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "nuxt dev",
+    "devhost": "nuxt dev --host 192.168.29.5",
     "build": "nuxt build",
     "preview": "nuxt preview",
     "generate": "nuxt generate",

@@ -24,12 +24,13 @@
 
 	// Initialize theme from localStorage
 	onMounted(() : void => {
-		theme.initTheme()
+		theme.initTheme();
 		applyThemeClass(theme.theme);
 	})
 
 	// Toggle theme
 	const setCurrentTheme = () : void => {
+		
 		const newTheme = theme.theme === 'light' ? 'dark' : 'light';
 		theme.setTheme(newTheme);
 		applyThemeClass(newTheme);
