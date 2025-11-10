@@ -2,7 +2,7 @@
 	<PageLayout>
 		<PageHeader>Contact</PageHeader>
 		<h2 class="text-2xl mt-2">Send me an email</h2>
-		<p>You may send an email to parthparmaronline (at) gmail (dot) com , I read all emails there on a daily basis.</p>
+		<p>You may send an email to <a class="primary-link underline! hover:text-primary-dark!" href="mailto:parthparmaronline@gmail.com">parthparmaronline@gmail.com</a> , I read all emails there very frequently.</p>
 		<h2 class="text-2xl mt-10">Via Social Media</h2>
 		<div class="grid grid-cols-16 gap-5 mt-2">
 			
@@ -34,7 +34,8 @@
 				
 		</div>
 		
-		<a class="primary-link" href="https://www.upwork.com/freelancers/~01bed55ae9935fc4d2" target="_blank"><h2 class="text-2xl mt-10">Hire me on Upwork</h2></a>
+		<a class="primary-link hover:text-primary-dark!" href="https://medium.com/@parthparmaronline" target="_blank"><h2 class="text-2xl mt-10">View Articles on Medium</h2></a>
+		<a class="primary-link hover:text-primary-dark!" href="https://www.upwork.com/freelancers/~01bed55ae9935fc4d2" target="_blank"><h2 class="text-2xl mt-10">Hire me on Upwork</h2></a>
 		
 	</PageLayout>
 </template>
