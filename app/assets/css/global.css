@@ -214,6 +214,23 @@ p, h1, div, section, menu, button, a{
 .resume-content a{
 	@apply text-primary! underline!;
 }
+.githubsvg path:first-child{
+	@apply fill-gray-950 dark:fill-color-text;
+}
+.githubsvg path:not(:first-child){
+	@apply dark:fill-global-background;
+}
+/* Target only the direct rect child, not the one in clipPath */
+/* Target by position */
+.tw-bg-rect {
+  @apply fill-phone-menu-background dark:fill-color-text;
+}
+.primary-link{
+	@apply text-primary! underline;
+}
+/* .icon-path {
+  @apply fill-primary! dark:fill-gray-950;
+} */
 html.is-changing .transition-main {
 	transition: opacity 250ms ease-in-out;
 }

@@ -1,0 +1,11 @@
+<svg class="rounded-lg twittersvg" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect class="tw-bg-rect" width="512" height="512"/>
+<g clip-path="url(#clip0_1423_44)">
+<path d="M296.355 223.824L456.086 42H418.248L279.495 199.843L168.756 42H41L208.496 280.71L41 471.357H78.8378L225.27 304.634L342.244 471.357H470M92.4943 69.9422H150.624L418.22 444.788H360.076" fill="black"/>
+</g>
+<defs>
+<clipPath id="clip0_1423_44">
+<rect class="tw-bg-rect2" width="429" height="429" transform="translate(41 42)"/>
+</clipPath>
+</defs>
+</svg>
