@@ -38,8 +38,8 @@
   --color-primary: #e35336;
   --color-primary-dark: #a0522d;
   --color-primary-burnt: #f4a460;
-  --color-color-text:#22262b;
-  --color-color-text-iv:#e9eef5;
+  --color-color-text:#2d2c26;
+  --color-color-text-iv:#f0ece7;
   --color-global-background: #f8f7f5;
   --color-body:#f5f5dc;
   --color-mobile-bg:#f5f5dc;
@@ -60,8 +60,8 @@
 	/* --color-primary: rgb(156, 164, 1); */
 	
 	--color-global-background: #181614;
-	--color-color-text:#e9eef5;
-	--color-color-text-iv:#22262b;
+	--color-color-text:#f0ece7;
+	--color-color-text-iv:#2d2c26;
 	--color-mobile-bg:#f5f5dc;
 	
 	--color-phone-menu-background:#221f1c;
@@ -186,6 +186,33 @@ p, h1, div, section, menu, button, a{
 }
 .tag-light-blue{
 	@apply bg-blue-500/20 text-blue-900 dark:text-blue-300;
+}
+.resume-content h3{
+	@apply text-3xl mt-10 text-primary! dark:text-primary-burnt!;
+	font-weight: 500;
+	font-style: normal;
+}
+.resume-skills h4{
+	@apply mt-5!;
+}
+.resume-content h4{
+	@apply text-xl mt-5;
+	font-weight: 500;
+	font-style: normal;
+}
+.resume-content h5{
+	@apply text-lg mt-1;
+	font-weight: 500;
+	font-style: normal;
+}
+.resume-content ul{
+	@apply list-disc ml-5.5;
+}
+.resume-content ul li{
+	@apply mt-2;
+}
+.resume-content a{
+	@apply text-primary! underline!;
 }
 html.is-changing .transition-main {
 	transition: opacity 250ms ease-in-out;
