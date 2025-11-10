@@ -1,36 +1,23 @@
 <template>
   <span>
 		<Hero></Hero>
-		<br>
-		<br>
-		<br>
-		<br>
-		<FeaturedWork></FeaturedWork>
-		<br>
+		
+		<FeaturedWork class="mt-20"></FeaturedWork>
 		
 			
-		<InputButton to="/portfolio" text="View Portfolio" add-classes="btn-lg btn-icon-inline"></InputButton>
+		<InputButton to="/portfolio" text="View Portfolio" add-classes="btn-lg btn-icon-inline mt-10"></InputButton>
 		<!-- portfolio end -->
-		<br>
-		<br>
-		<br>
-		<br>
-		<AboutMe></AboutMe>
-		<br>
-		<br>
-		<br>
-		<br>
-		<Technologies></Technologies>
-		<br>
-		<br>
-		<br>
-		<br>
-		<Reviews></Reviews>
+
+		<LatestMediumArticle class="mt-20"></LatestMediumArticle>
 		
-		<br>
-		<br>
-		<br>
-		<InputButton to="/contact" text="Ready to Start Your Project?" add-classes="btn-lg btn-icon-inline"></InputButton>
+		
+		<AboutMe class="mt-20"></AboutMe>
+		
+		<Technologies class="mt-22"></Technologies>
+		
+		<Reviews class="mt-22!"></Reviews>
+
+		<InputButton to="/contact" text="Ready to Start Your Project?" add-classes="btn-lg btn-icon-inline mt-10"></InputButton>
 	
   </span>
 </template>
@@ -44,6 +31,7 @@
 	import AboutMe from '../components/AboutMe.vue';
 	import Technologies from '../components/Technologies.vue';
 	import Reviews from '../components/Reviews.vue';
+	import LatestMediumArticle from '../components/LatestMediumArticle.vue';
 	
 
 </script>

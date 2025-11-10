@@ -208,7 +208,7 @@ p, h1, div, section, menu, button, a{
 .resume-content ul{
 	@apply list-disc ml-5.5;
 }
-.resume-content ul li{
+.resume-content ul li, .medium-article ul li{
 	@apply mt-2;
 }
 .resume-content a{

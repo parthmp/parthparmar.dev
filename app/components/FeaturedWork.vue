@@ -15,7 +15,7 @@
 							Deskmint is being developed to centralize client communication, manage invoices, and securely store documents in an encrypted vault, helping companies keep interactions and data organized and transparent.
 						</template>
 						<template #additional>
-							<div class="flex flex-col md:flex-row gap-5">
+							<div class="flex flex-col md:flex-row gap-5 mt-2.5">
 								<a href="https://github.com/parthmp/deskmint-frontend" target="_blank" class="grow primary-btn s-primary-btn btn-icon btn-icon shadow-none!">
 									<span>Frontend</span>
 									<IconBrandGithub></IconBrandGithub>

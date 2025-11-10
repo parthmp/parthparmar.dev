@@ -27,7 +27,7 @@
 							A demonstration project built to showcase gold-standard software engineering practices in PHP. The system simulates a shopping basket that emphasizes clean architecture, type safety, and test-driven design rather than end-user features.
 						</template>
 						<template #additional>
-								<a href="https://github.com/parthmp/acme-widget-co" target="_blank" class="primary-btn s-primary-btn btn-icon btn-icon shadow-none!">
+								<a href="https://github.com/parthmp/acme-widget-co" target="_blank" class="primary-btn s-primary-btn btn-icon btn-icon shadow-none! mt-2">
 									<span>Source Code</span>
 									<IconBrandGithub></IconBrandGithub>
 								</a>
