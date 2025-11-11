@@ -37,7 +37,7 @@
 							Social Media PWA
 						</template>
 						<template #description>
-							A private social network for a closed community, featuring OTP login, searchable profiles, verified accounts, and pages for companies and trusts.
+							A private community and social platform built with Laravel and Vue, designed to help the organization manage member profiles, posts, and internal interactions, while ensuring complete administrative oversight and financial transparency. The application is a Progressive Web App (PWA) and is also packaged for Android using Capacitor.
 						</template>
 					</PortfolioCard>
 				</Card>
@@ -50,7 +50,7 @@
 							Real Estate Referral Portal
 						</template>
 						<template #description>
-							ReferralsB2B is a platform that helps users find and connect with real estate agents through searchable profiles and an interactive map.
+							A real estate agent referral and discovery platform built with Laravel and Bootstrap, designed to connect real estate professionals through searchable profiles and an interactive map interface powered by OpenStreetMap, while providing administrators with complete control over platform data and operations.
 						</template>
 					</PortfolioCard>
 				</Card>

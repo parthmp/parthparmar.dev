@@ -24,7 +24,7 @@ export const useProjects = () => {
 		},
 		social: {
 			title: 'Social Media PWA',
-			description: 'A private community and social platform built with Laravel and Vue, designed to help organizations manage member profiles, posts, and internal interactions while maintaining complete administrative oversight and financial transparency. The application is built as a Progressive Web App (PWA) and also packaged for Android using Capacitor.',
+			description: 'A private community and social platform built with Laravel and Vue, designed to help the organization manage member profiles, posts, and internal interactions, while ensuring complete administrative oversight and financial transparency. The application is a Progressive Web App (PWA) and is also packaged for Android using Capacitor.',
 			tags: [
 				{ type: 'success', text: 'Vue' },
 				{ type: 'primary', text: 'Laravel' },

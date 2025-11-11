@@ -117,9 +117,9 @@
 		keywords = 'DeskMint, SaaS dashboard, full-stack portfolio, Vue.js, Laravel, Tailwind CSS, PWA app, dynamic custom fields, secure invoicing, encrypted document storage, enterprise web development, scalable SaaS, web app showcase, source available project, in development';
 		url = 'https://parthparmar.dev/portfolio/deskmint';
 	}else if(lowerSlug === 'social'){
-		title = '';
-		description = '';
-		keywords = '';
+		title = 'Private Social Media PWA | Full-Stack Laravel & Vue App | Parth Parmar';
+		description = 'Discover a private social platform built with Laravel and Vue, featuring member profiles, activity feeds, chat, admin dashboards, and financial tracking. Fully PWA-enabled and packaged for Android with Capacitor, showcasing end-to-end full-stack development.';
+		keywords = 'Private social network, Social Media PWA, Laravel Vue app, Capacitor Android app, full-stack developer portfolio, admin dashboard, member management system, community platform, matrimony module, financial tracking, responsive PWA, Vue SPA, Parth Parmar';
 		url = 'https://parthparmar.dev/portfolio/social';
 	}else if(lowerSlug === 'refb2b'){
 		title = '';

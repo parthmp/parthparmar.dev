@@ -5,14 +5,14 @@
       @click.self="handleBackdropClick"
     >
       
-      <button @click="$emit('close')" class="cursor-pointer absolute top-4 right-4 text-white! text-4xl hover:text-gray-300 z-10">
+      <button @click="$emit('close')" class="cursor-pointer absolute top-4 right-4 text-primary! text-4xl hover:text-gray-300 z-10">
         <IconX :size="32"></IconX>
       </button>
       
       <button 
         v-if="currentIndex > 0" 
         @click="handlePrev" 
-        class="cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 text-white! text-4xl hover:text-gray-300 z-10 lg:p-5"
+        class="cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 text-primary! text-4xl hover:text-gray-300 z-10 lg:p-5"
       >
         <IconChevronLeft :size="48"></IconChevronLeft>
       </button>
@@ -20,7 +20,7 @@
       <div class="w-full h-full flex items-center justify-center p-4 relative" >
         
         <div v-if="imageLoading" class="absolute inset-0 flex items-center justify-center z-20">
-          <IconLoader2 :size="48" class="text-white animate-spin" />
+          <IconLoader2 :size="48" class="text-primary! animate-spin" />
         </div>
         
         <div 
@@ -47,7 +47,7 @@
           </Transition>
         </div>
         
-        <p class="absolute bottom-4 text-white! text-center bg-black/50 px-4 py-2 rounded">
+        <p class="absolute bottom-4 text-primary! text-center bg-black/50 px-4 py-2 rounded">
           {{ currentIndex + 1 }} / {{ images.length }}
           <span v-if="scale > 1" class="ml-2 text-sm">{{ Math.round(scale * 100) }}%</span>
         </p>
@@ -56,7 +56,7 @@
       <button 
         v-if="currentIndex < images.length - 1" 
         @click="handleNext" 
-        class="cursor-pointer absolute right-4 top-1/2 -translate-y-1/2 text-white! text-4xl hover:text-gray-300 z-10 lg:p-5"
+        class="cursor-pointer absolute right-4 top-1/2 -translate-y-1/2 text-primary! text-4xl hover:text-gray-300 z-10 lg:p-5"
       >
         <IconChevronRight :size="48"></IconChevronRight>
       </button>
