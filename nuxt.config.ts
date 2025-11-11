@@ -42,7 +42,7 @@ export default defineNuxtConfig({
 		site: {
 			url: 'https://parthparmar.dev',
 			name: 'Parth Parmar',
-			description: 'Polyglot Web and Software Developer based in Surat, India working worldwide remotely - experienced in Laravel, Vue, Tailwind, PWA development, and other modern technologies.',
+			description: 'Full-stack web and software developer specializing in Laravel, Vue.js, Nuxt, Tailwind CSS, Progressive Web Apps and Other modern technologies. Available for international remote work and freelance projects.',
 		},
 		app: {
 			pageTransition: { name: 'page', mode: 'out-in' },
@@ -91,8 +91,8 @@ export default defineNuxtConfig({
 					name: 'Parth Parmar',
 					givenName: 'Parth',
 					familyName: 'Parmar',
-					image: 'https://parthparmar.dev/_ipx/w_1024&f_webp&q_80/images/parth-parmar-programmer-web-developer-surat-india.jpg',
-					description: 'Polyglot Web and Software Developer based in Surat, India working worldwide remotely - experienced in Laravel, Vue, Tailwind, PWA development, and other modern technologies.',
+					image: 'https://parthparmar.dev/_ipx/w_1024&f_webp&q_80/images/parth-parmar-programmer-web-developer.jpg',
+					description: 'Full-stack web and software developer specializing in Laravel, Vue.js, Nuxt, Tailwind CSS, Progressive Web Apps and Other modern technologies. Available for international remote work and freelance projects.',
 					jobTitle: 'Web & Software Developer',
 					url: 'https://parthparmar.dev',
 						knowsAbout: [

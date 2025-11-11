@@ -43,7 +43,7 @@
 	*/
 
 	const title = 'Parth Parmar - Web & Software Developer | Programmer';
-	const description = 'Polyglot developer based in Surat, India, and working remotely worldwide. Experienced in Laravel, Vue, Tailwind, and PWA development.';
+	const description = 'Remote full-stack developer specializing in Laravel, Vue, Tailwind, and PWA development. Delivering high-quality work for startups and agencies worldwide.';
 	
 	defineOgImageComponent('OgImageForPages', {
 		title: title,
@@ -53,7 +53,7 @@
 	useSeoMeta({
 		title: title,
 		description: description,
-		keywords: 'Laravel developer, Vue.js developer, Tailwind CSS, PWA, Web Developer India, Offshore developer, Offshore programmer, Software Engineer',
+		keywords: 'Laravel developer, Vue.js developer, Tailwind CSS, PWA, Web Developer, Remote full-stack developer,Offshore developer, Offshore programmer, Software Engineer',
 		author: 'Parth Parmar',
 		robots: 'index, follow',
 		ogTitle: title,

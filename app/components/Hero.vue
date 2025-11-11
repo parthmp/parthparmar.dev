@@ -18,13 +18,13 @@
 			</div>
 			<div class="col-span-12 mt-8 lg:mt-0 lg:col-span-3">
 				<NuxtPicture
-					src="/images/parth-parmar-programmer-web-developer-surat-india.jpg"
-					:img-attrs="{ class: 'w-full rounded-full', alt: 'parth parmar, programmer, surat, gujarat, india, web & software programmer, digitalsitara, deskmint, affordable saas developer' }"
+					src="/images/parth-parmar-programmer-web-developer.jpg"
+					:img-attrs="{ class: 'w-full rounded-full', alt: 'parth parmar, programmer, remote developer, international developer, web & software programmer, digitalsitara, deskmint, affordable saas developer' }"
 					sizes="100vw sm:400px md:768px lg:1024px"
 					format="webp"
 					preload
 				/>
-				<!-- <img :src="parthImage" class="w-full max-w-xs lg:max-w-sm rounded-full border-0 border-solid border-primary shadow-xl m-auto" alt="parth parmar, programmer, surat, gujarat, india, web & software programmer, digitalsitara, deskmint"> -->
+				
 			</div>
 		</div>
 			
