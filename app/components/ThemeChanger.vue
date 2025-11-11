@@ -1,6 +1,6 @@
 <template>
   <li class="theme-changer">
-    <a href="javascript:;" @click.prevent="setCurrentTheme">
+    <a href="#" @click.prevent="setCurrentTheme">
       <span id="sun-icon" v-if="themeName === 'light'">
         <IconSun :size="24" />
       </span>
