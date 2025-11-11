@@ -19,7 +19,7 @@
 				:loading="props.loading"
 			/>
 			
-			<h3 class="text-xl mt-3 poppins-medium">
+			<h3 class="text-xl mt-3 poppins-medium leading-relaxed lg:leading-normal">
 				<slot name="header"></slot>
 			</h3>
 			<p class="mt-3">

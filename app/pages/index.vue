@@ -52,7 +52,7 @@
 
 	useSeoMeta({
 		title: title,
-		description: '',
+		description: description,
 		keywords: 'Laravel developer, Vue.js developer, Tailwind CSS, PWA, Web Developer India, Offshore developer, Offshore programmer, Software Engineer',
 		author: 'Parth Parmar',
 		robots: 'index, follow',

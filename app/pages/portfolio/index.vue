@@ -98,5 +98,32 @@
 		]
 	};
 
+	const title = 'Portfolio | Parth Parmar - Web & Software Developer | Programmer';
+	const description = 'Discover the portfolio of Parth Parmar, a full-stack developer creating high-performance web and PWA applications. Browse projects like DeskMint client dashboard, private social networks, real estate referral portals, municipal apps, and PHP architecture showcases - built with Laravel, Vue.js, Tailwind, Nuxt, and modern web technologies.';
+	const url = 'https://parthparmar.dev/portfolio';
+	
+	defineOgImageComponent('OgImageForPages', {
+		title: title,
+		description : description
+	});
+
+	useSeoMeta({
+		title: title,
+		description: description,
+		keywords: 'Full-stack developer, Laravel portfolio, Vue.js projects, Tailwind CSS development, PWA apps, PHP clean architecture, DeskMint dashboard, private social network, real estate portal, municipal communication platform, web app showcase, Nuxt 4 portfolio, high-performance web development, modern web technologies',
+		author: 'Parth Parmar',
+		robots: 'index, follow',
+		ogTitle: title,
+		ogDescription: description,
+		ogType: 'website',
+		ogUrl: url,
+		twitterCard: 'summary_large_image',
+		twitterTitle: title,
+		twitterDescription: description,
+		twitterCreator: '@logicalwebdev',
+		language: 'en',
+		canonical: url,
+	});
+
 
 </script>
