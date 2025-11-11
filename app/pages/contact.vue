@@ -49,4 +49,32 @@
 	import GithubSVG from '~/assets/svg/brands/github.svg';
 	import TwitterSVG from '~/assets/svg/brands/twitter.svg';
 
+	const title = 'Contact Parth Parmar | Freelance & Full-Time Opportunities';
+	const description = 'Get in touch with Parth Parmar via email, social media, or Upwork for freelance projects, collaborations, or full-time job opportunities.';
+	const keywords = 'Contact Parth Parmar, hire Parth Parmar, freelance developer, full-time developer, Upwork Parth Parmar, portfolio contact, developer inquiries, web developer job opportunities, deskmint';
+	const url = 'https://parthparmar.dev/contact';
+
+	defineOgImageComponent('OgImageForPages', {
+		title: title,
+		description : description
+	});
+
+	useSeoMeta({
+		title: title,
+		description: description,
+		keywords: keywords,
+		author: 'Parth Parmar',
+		robots: 'index, follow',
+		ogTitle: title,
+		ogDescription: description,
+		ogType: 'website',
+		ogUrl: url,
+		twitterCard: 'summary_large_image',
+		twitterTitle: title,
+		twitterDescription: description,
+		twitterCreator: '@logicalwebdev',
+		language: 'en',
+		canonical: url,
+	});
+
 </script>

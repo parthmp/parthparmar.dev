@@ -39,6 +39,11 @@ export default defineNuxtConfig({
 					xxl: 1536
 				}
 		},
+		site: {
+			url: 'https://parthparmar.dev',
+			name: 'Parth Parmar',
+			description: 'Polyglot Web and Software Developer based in Surat, India working worldwide remotely - experienced in Laravel, Vue, Tailwind, PWA development, and other modern technologies.',
+		},
 		app: {
 			pageTransition: { name: 'page', mode: 'out-in' },
 			head: {
@@ -75,15 +80,63 @@ export default defineNuxtConfig({
 					preset: 'static',
 				},
 
+				runtimeConfig: {
+					public: {
+						siteUrl: 'https://parthparmar.dev'
+					}
+				},
+
 				schemaOrg: {
 					identity: definePerson({
 					name: 'Parth Parmar',
 					givenName: 'Parth',
 					familyName: 'Parmar',
-					image: '/images/parth-parmar-programmer-web-developer-surat-india.png',
-					description: 'Polyglot Web and Software Developer based in Surat, India - experienced in Laravel, Vue, Tailwind, PWA development, and other modern technologies.',
+					image: 'https://parthparmar.dev/_ipx/w_1024&f_webp&q_80/images/parth-parmar-programmer-web-developer-surat-india.jpg',
+					description: 'Polyglot Web and Software Developer based in Surat, India working worldwide remotely - experienced in Laravel, Vue, Tailwind, PWA development, and other modern technologies.',
 					jobTitle: 'Web & Software Developer',
 					url: 'https://parthparmar.dev',
+						knowsAbout: [
+							'JavaScript',
+							'TypeScript',
+							'PHP',
+							'CSS',
+							'HTML',
+							'Java',
+							'C#',
+							'C++',
+							'C',
+							'Visual Basic',
+							'Perl',
+							'Python',
+							'MySQL',
+							'SQLite',
+							'MongoDB',
+							'Laravel',
+							'Vue.js',
+							'Nuxt.js',
+							'Capacitor',
+							'Tailwind CSS',
+							'Bootstrap',
+							'Node.js',
+							'Express.js',
+							'WordPress',
+							'jQuery',
+							'Vite',
+							'Git',
+							'Figma',
+							'DigitalOcean',
+							'Vultr',
+							'Cloudflare',
+							'Linux',
+							'Windows',
+							'Progressive Web Apps',
+							'PWA Development',
+							'Full-Stack Development',
+							'Web Development',
+							'Software Development',
+							'Android Development'
+						],
+					knowsLanguage: ['English', 'Gujarati', 'Hindi'],
 					sameAs: [
 						'https://github.com/parthmp',
 						'https://www.linkedin.com/in/parthmp/',
