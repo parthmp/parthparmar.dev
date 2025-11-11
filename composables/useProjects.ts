@@ -45,7 +45,7 @@ export const useProjects = () => {
 		},
 		mproject: {
 			title: 'Municipal Platform',
-			description: 'A municipal communication and information platform built with Laravel and Angular, designed to help local administrations publish categorized posts, announcements, and updates directly to citizens through a native Android app with real-time notifications.',
+			description: 'Built a bilingual municipal communication platform featuring a native Java Android app, Angular frontend, and Laravel API. MQTT was used for real-time push notifications, enabling administrators to instantly publish announcements and posts in multiple languages.',
 			tags: [
 				{ type: 'yellow', text: 'Angular' },
 				{ type: 'primary', text: 'Laravel' },
@@ -63,7 +63,7 @@ export const useProjects = () => {
 		},
 		acme: {
 			title: 'Gold Standard Programming Practices - PHP',
-			description: 'A demonstration project written in PHP that simulates a shopping basket for an imaginary widget company. It focuses on clarity, modular design, and correctness - implementing realistic e-commerce logic such as pricing, delivery calculation, and discount offers - while adhering to modern software engineering standards',
+			description: 'A demonstration project built to showcase gold-standard software engineering practices in PHP. The system simulates a shopping basket that emphasizes clean architecture, type safety, and test-driven design rather than end-user features.',
 			tags: [
 				{ type: 'success', text: 'PHP' },
 				{ type: 'primary', text: 'Composer' },

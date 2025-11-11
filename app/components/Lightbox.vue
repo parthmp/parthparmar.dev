@@ -10,20 +10,20 @@
       </button>
       
       <button 
-        v-if="currentIndex > 0" 
+        v-if="currentIndex > 0 && !images[currentIndex].video" 
         @click="handlePrev" 
         class="cursor-pointer absolute left-4 top-1/2 -translate-y-1/2 text-primary! text-4xl hover:text-gray-300 z-10 lg:p-5"
       >
         <IconChevronLeft :size="48"></IconChevronLeft>
       </button>
       
-      <div class="w-full h-full flex items-center justify-center p-4 relative" >
+      <div class="w-full h-full flex items-center justify-center p-4 relative" v-if="!images[currentIndex].video">
         
         <div v-if="imageLoading" class="absolute inset-0 flex items-center justify-center z-20">
           <IconLoader2 :size="48" class="text-primary! animate-spin" />
         </div>
         
-        <div 
+        <div
           class="relative w-full h-full flex items-center justify-center overflow-hidden"
           @touchstart="handleTouchStart"
           @touchmove="handleTouchMove"
@@ -54,7 +54,7 @@
       </div>
 
       <button 
-        v-if="currentIndex < images.length - 1" 
+        v-if="currentIndex < images.length - 1 && !images[currentIndex+1]?.video" 
         @click="handleNext" 
         class="cursor-pointer absolute right-4 top-1/2 -translate-y-1/2 text-primary! text-4xl hover:text-gray-300 z-10 lg:p-5"
       >

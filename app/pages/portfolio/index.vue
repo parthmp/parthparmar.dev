@@ -12,7 +12,7 @@
 							Municipal Platform
 						</template>
 						<template #description>
-							Developed a bilingual municipal communication platform with a native Java Android app and Angular frontend. Implemented MQTT for real-time push notifications, enabling administrators to publish announcements and posts in multiple languages with instant delivery to users.
+							Built a bilingual municipal communication platform featuring a native Java Android app, Angular frontend, and Laravel API. MQTT was used for real-time push notifications, enabling administrators to instantly publish announcements and posts in multiple languages.
 						</template>
 					</PortfolioCard>
 				</Card>

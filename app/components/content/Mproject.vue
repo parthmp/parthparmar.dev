@@ -10,7 +10,7 @@
 			<li>Native Android app for citizens to view updates and posts</li>
 			<li>Secure API endpoints for mobile communication</li>
 			<li>Responsive admin interface built with Angular and Bootstrap</li>
-			<li>Custom CMS with Angular + Laravel</li>
+			<li>Custom CMS with Angular (SPA) + Laravel (API)</li>
 		</template>
 		<template #demonstrates>
 			<li>Cross-platform system design (Web + Android)</li>

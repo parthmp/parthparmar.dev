@@ -84,6 +84,7 @@
 
 	const project = getProject(slug);
 
+
 	const lightboxOpen = ref(false);
 	const currentImageIndex = ref(0);
 
@@ -122,19 +123,19 @@
 		keywords = 'Private social network, Social Media PWA, Laravel Vue app, Capacitor Android app, full-stack developer portfolio, admin dashboard, member management system, community platform, matrimony module, financial tracking, responsive PWA, Vue SPA, Parth Parmar';
 		url = 'https://parthparmar.dev/portfolio/social';
 	}else if(lowerSlug === 'refb2b'){
-		title = '';
-		description = '';
-		keywords = '';
+		title = 'Real Estate Referral Portal | Laravel & Bootstrap Full-Stack App | Parth Parmar';
+		description = 'Discover a real estate agent referral platform built with Laravel and Bootstrap. Features include interactive OpenStreetMap search, detailed agent profiles, filtering by expertise and location, and a responsive admin dashboard for full platform control.';
+		keywords = 'Real estate referral portal, Laravel web app, Bootstrap app, OpenStreetMap integration, Leaflet map search, agent discovery platform, real estate management, admin dashboard, responsive web app, PHP Laravel portfolio, full-stack development';
 		url = 'https://parthparmar.dev/portfolio/refb2b';
 	}else if(lowerSlug === 'mproject'){
-		title = '';
-		description = '';
-		keywords = '';
+		title = 'Municipal Communication Platform | Android & Angular App | Parth Parmar';
+		description = 'A bilingual municipal communication platform with a native Java Android app, Angular admin panel, and Laravel API. Features real-time push notifications via MQTT, secure API endpoints, and responsive admin interface for posts, notices, and alerts.';
+		keywords = 'Municipal communication app, Android municipal app, Angular admin panel, Laravel API, real-time notifications, MQTT push notifications, bilingual municipal platform, native Android app, responsive web admin, municipal notices and alerts, cross-platform app, full-stack development';
 		url = 'https://parthparmar.dev/portfolio/mproject';
 	}else if(lowerSlug === 'acme'){
-		title = '';
-		description = '';
-		keywords = '';
+		title = 'Gold Standard PHP | Clean, Testable & Modular Code | Parth Parmar';
+		description = 'A PHP demonstration project showcasing clean architecture, dependency injection, Strategy Pattern, and full PHPUnit test coverage. Built with Docker and modern PHP tooling to highlight maintainable, modular, and testable backend development.';
+		keywords = 'Gold standard PHP, clean architecture PHP, test-driven PHP, modular backend PHP, dependency injection PHP, PHPUnit testing, Strategy Pattern PHP, Docker PHP, maintainable PHP code, modern PHP development, CI-ready PHP';
 		url = 'https://parthparmar.dev/portfolio/acme';
 	}
 	
