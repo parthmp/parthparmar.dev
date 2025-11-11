@@ -44,63 +44,121 @@
 </template>
 <script lang="ts" setup>
 
-import { computed, ref } from 'vue';
-import Lightbox from '../../components/Lightbox.vue';
-import PageLayout from '../../components/UI/PageLayout.vue';
-import PageHeader from '../../components/UI/PageHeader.vue';
-import Tag from '../../components/UI/Tag.vue';
-import { useProjects } from '../../../composables/useProjects';
-import { createError, useRoute } from 'nuxt/app';
-import { Component as VueComponent } from 'vue';
+	import { computed, ref } from 'vue';
+	import Lightbox from '../../components/Lightbox.vue';
+	import PageLayout from '../../components/UI/PageLayout.vue';
+	import PageHeader from '../../components/UI/PageHeader.vue';
+	import Tag from '../../components/UI/Tag.vue';
+	import { useProjects } from '../../../composables/useProjects';
+	import { createError, useRoute } from 'nuxt/app';
+	import { Component as VueComponent } from 'vue';
 
-import DeskMint from '../../components/content/DeskMint.vue';
-import Social from '../../components/content/Social.vue';
-import RefB2B from '../../components/content/RefB2B.vue';
-import Mproject from '../../components/content/Mproject.vue';
-import Acme from '../../components/content/Acme.vue';
+	import DeskMint from '../../components/content/DeskMint.vue';
+	import Social from '../../components/content/Social.vue';
+	import RefB2B from '../../components/content/RefB2B.vue';
+	import Mproject from '../../components/content/Mproject.vue';
+	import Acme from '../../components/content/Acme.vue';
 
-const route = useRoute();
+	const route = useRoute();
 
-const { getProject } = useProjects();
+	const { getProject } = useProjects();
 
-const slug = route.params.slug;
+	const slug = route.params.slug;
 
-const pagesSlugs = ['deskmint', 'social', 'mproject', 'refb2b', 'acme'];
+	const pagesSlugs = ['deskmint', 'social', 'mproject', 'refb2b', 'acme'];
 
-const components : VueComponent = {
-	DeskMint,
-	Social,
-	RefB2B,
-	Mproject,
-	Acme
-};
+	const components : VueComponent = {
+		DeskMint,
+		Social,
+		RefB2B,
+		Mproject,
+		Acme
+	};
 
-if(!pagesSlugs.includes(slug)){
-	throw createError({
-		statusCode: 404,
-		statusMessage: 'Page Not Found',
+	if(!pagesSlugs.includes(slug)){
+		throw createError({
+			statusCode: 404,
+			statusMessage: 'Page Not Found',
+		});
+	}
+
+	const project = getProject(slug);
+
+	const lightboxOpen = ref(false);
+	const currentImageIndex = ref(0);
+
+	const openLightbox = (index) => {
+		currentImageIndex.value = index;
+		lightboxOpen.value = true;
+	}
+
+	const nextImage = () => {
+		currentImageIndex.value = (currentImageIndex.value + 1) % project.images.length;
+	}
+
+	const prevImage = () => {
+		currentImageIndex.value = (currentImageIndex.value - 1 + project.images.length) % project.images.length;
+	}
+
+	const contentComponent = computed(() : any => {
+		return components[project.content];
 	});
-}
 
-const project = getProject(slug);
+	let title = '';
+	let description = '';
+	let url = '';
+	let keywords = '';
 
-const lightboxOpen = ref(false);
-const currentImageIndex = ref(0);
+	let lowerSlug = slug.toLowerCase();
 
-const openLightbox = (index) => {
-	currentImageIndex.value = index;
-	lightboxOpen.value = true;
-}
+	if(lowerSlug === 'deskmint'){
+		title = 'DeskMint | SaaS Dashboard by Parth Parmar | Vue, Laravel & PWA';
+		description = 'Discover DeskMint, an in-development full-stack SaaS dashboard showcasing advanced client management, dynamic custom fields and secure invoicing. Built with Vue.js, Laravel, Tailwind, and PWA-ready architecture, it demonstrates enterprise-grade web development in action.';
+		keywords = 'DeskMint, SaaS dashboard, full-stack portfolio, Vue.js, Laravel, Tailwind CSS, PWA app, dynamic custom fields, secure invoicing, encrypted document storage, enterprise web development, scalable SaaS, web app showcase, source available project, in development';
+		url = 'https://parthparmar.dev/portfolio/deskmint';
+	}else if(lowerSlug === 'social'){
+		title = '';
+		description = '';
+		keywords = '';
+		url = 'https://parthparmar.dev/portfolio/social';
+	}else if(lowerSlug === 'refb2b'){
+		title = '';
+		description = '';
+		keywords = '';
+		url = 'https://parthparmar.dev/portfolio/refb2b';
+	}else if(lowerSlug === 'mproject'){
+		title = '';
+		description = '';
+		keywords = '';
+		url = 'https://parthparmar.dev/portfolio/mproject';
+	}else if(lowerSlug === 'acme'){
+		title = '';
+		description = '';
+		keywords = '';
+		url = 'https://parthparmar.dev/portfolio/acme';
+	}
+	
+	defineOgImageComponent('OgImageForPages', {
+		title: title,
+		description : description
+	});
 
-const nextImage = () => {
-	currentImageIndex.value = (currentImageIndex.value + 1) % project.images.length;
-}
+	useSeoMeta({
+		title: title,
+		description: description,
+		keywords: keywords,
+		author: 'Parth Parmar',
+		robots: 'index, follow',
+		ogTitle: title,
+		ogDescription: description,
+		ogType: 'website',
+		ogUrl: url,
+		twitterCard: 'summary_large_image',
+		twitterTitle: title,
+		twitterDescription: description,
+		twitterCreator: '@logicalwebdev',
+		language: 'en',
+		canonical: url,
+	});
 
-const prevImage = () => {
-	currentImageIndex.value = (currentImageIndex.value - 1 + project.images.length) % project.images.length;
-}
-
-const contentComponent = computed(() : any => {
-	return components[project.content];
-});
 </script>

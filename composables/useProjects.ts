@@ -11,7 +11,8 @@ export const useProjects = () => {
 				{ type : 'blue', text : 'MySQL' },
 				{ type : 'light-blue', text : 'Tailwind' },
 				{ type : 'primary', text : 'Capacitor' },
-				{ type : 'success', text : 'PWA' }
+				{ type : 'success', text : 'PWA' },
+				{ type : 'blue', text : 'TypeScript' }
 			],
 			images: [
 				{ src: '/images/portfolio/deskmint/deskmint-1.png', alt: 'Deskmint dashboard showing clients' },
