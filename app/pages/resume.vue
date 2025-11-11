@@ -121,7 +121,7 @@
             <li>Planned software design and architecture, guiding other developers and explaining various programming best practices.</li>
             <li>Reviewed code from team members, identified mistakes and poor practices, and provided guidance for improvement.</li>
             <li>Produced high-quality code, created and modified system functions, and conducted thorough testing.</li>
-            <li>Developed critical web software for the company, including modifications, upgrades, deployment, and testing—managed under the supervision of U.S. government agencies such as DPS, DDS, DOR, and DMV.</li>
+            <li>Developed critical web software for the company, including modifications, upgrades, deployment, and testing-managed under the supervision of U.S. government agencies such as DPS, DDS, DOR, and DMV.</li>
             <li>Built a desktop application for the company to update systems with a single click.</li>
             <li>Developed a chat application using Node.js, MongoDB, and Express, performing testing and necessary upgrades.</li>
             <li>Created a custom MVC framework in PHP and built a system based on it.</li>

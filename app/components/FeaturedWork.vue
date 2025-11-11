@@ -95,7 +95,8 @@
 			{ type : 'primary', text : 'Laravel' },
 			{ type : 'blue', text : 'MySQL' },
 			{ type : 'light-blue', text : 'Tailwind' },
-			{ type : 'success', text : 'PWA' }
+			{ type : 'success', text : 'PWA' },
+			{ type : 'primary', text : 'TypeScript' }
 		],
 		social : [
 			{ type : 'success', text : 'Vue' },

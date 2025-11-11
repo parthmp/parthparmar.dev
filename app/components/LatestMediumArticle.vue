@@ -3,7 +3,7 @@
 		<h2 class="second-header">Featured Security Research</h2>
 		<br>
 		<Card>
-			<h3 class="text-xl poppins-medium">The Gmail Bounce That Led Me Down a Phishing Rabbit Hole: Dissecting a Sophisticated Phishing Email Campaign</h3>
+			<h3 class="text-xl poppins-medium leading-relaxed lg:leading-normal">The Gmail Bounce That Led Me Down a Phishing Rabbit Hole: Dissecting a Sophisticated Phishing Email Campaign</h3>
 				<p class="mt-2">How a single delivery failure notification revealed a multi-stage phishing operation spanning across multiple cloud infrastructure providers, multiple domains, and advanced evasion techniques.</p>
 				<p class="mt-3">A deep-dive analysis covering:</p>
 				<ul class="list-disc ml-7 mt-1">

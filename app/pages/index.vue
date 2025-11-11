@@ -39,30 +39,31 @@
 	 * og image for each page defined with defineOgImageComponent
 	 * robots.txt generated automatically
 	 * sitemap.xml generated automatically
+	 * 
 	*/
+
+	const title = 'Parth Parmar - Web & Software Developer | Programmer';
+	const description = 'Polyglot developer based in Surat, India, and working remotely worldwide. Experienced in Laravel, Vue, Tailwind, and PWA development.';
 	
 	defineOgImageComponent('OgImageForPages', {
-		title: 'Is this thing on? Is this thing on?Is this thing on?',
-		description : 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil id hic incidunt dicta autem perferendis, provident aliquid! Explicabo ipsum nostrum, numquam animi eligendi illum sint in perferendis laudantium cum ratione.'
+		title: title,
+		description : description
 	});
 
 	useSeoMeta({
-		title: 'Parth Parmar - Web & Software Developer',
-		description: 'Polyglot developer based in Surat, India. Experienced in Laravel, Vue, Tailwind, and PWA development.',
-		keywords: 'Laravel developer, Vue.js developer, Tailwind CSS, PWA, Web Developer India, Software Engineer',
+		title: title,
+		description: '',
+		keywords: 'Laravel developer, Vue.js developer, Tailwind CSS, PWA, Web Developer India, Offshore developer, Offshore programmer, Software Engineer',
 		author: 'Parth Parmar',
 		robots: 'index, follow',
-		ogTitle: 'Parth Parmar - Web & Software Developer',
-		ogDescription: 'Polyglot developer experienced in Laravel, Vue, Tailwind, and PWA development.',
+		ogTitle: title,
+		ogDescription: description,
 		ogType: 'website',
 		ogUrl: 'https://parthparmar.dev',
-		ogImage: 'https://parthparmar.dev/images/parth-parmar-programmer-web-developer-surat-india.png',
 		twitterCard: 'summary_large_image',
-		twitterTitle: 'Parth Parmar - Web & Software Developer',
-		twitterDescription: 'Experienced in Laravel, Vue, Tailwind, and PWA development.',
-		twitterImage: 'https://parthparmar.dev/images/parth-parmar-programmer-web-developer-surat-india.png',
-		twitterCreator: '@your_twitter_handle', // optional
-		themeColor: '#0f172a', // matches your Tailwind dark bg
+		twitterTitle: title,
+		twitterDescription: description,
+		twitterCreator: '@logicalwebdev',
 		language: 'en',
 		canonical: 'https://parthparmar.dev',
 	});

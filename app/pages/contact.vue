@@ -48,14 +48,5 @@
 	import LinkedinSVG from '~/assets/svg/brands/linkedin.svg';
 	import GithubSVG from '~/assets/svg/brands/github.svg';
 	import TwitterSVG from '~/assets/svg/brands/twitter.svg';
-// defineWebPage({
-//   '@type': 'WebPage',
-//   name: 'Contact of Parth Parmar',
-//   description:
-//     'Polyglot Web and Software Developer based in Surat, India — experienced in Laravel, Vue, Tailwind, and PWA development.',
-//   url: 'https://parthparmar.dev/',
-//   isPartOf: { '@id': 'https://parthparmar.dev/#website' },
-//   datePublished: '2024-10-10',
-//   dateModified: '2025-11-11'
-// });
+
 </script>
