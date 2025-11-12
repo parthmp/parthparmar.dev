@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing my work, projects, and experience as a Full-Stack Developer.
 
-**Live Site:** [parthparmar.dev](https://parthparmar.dev){target="_blank"}
+**Live Site:** [parthparmar.dev](https://parthparmar.dev target="_blank)
 
 ## Overview
 
