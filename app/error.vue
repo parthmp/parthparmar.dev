@@ -5,7 +5,7 @@
 	<br>
 	<br>
 	<br>
-    <p style="font-size: 100px;" class="mt-[1500px]">
+    <p style="font-size: 100px;">
       Error: {{ error.statusCode }}
 	</p>
     <NuxtLink to="/" class="mt-6 text-3xl text-primary! hover:text-primary-dark! underline!">

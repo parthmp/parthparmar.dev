@@ -10,7 +10,7 @@
 						:src="image.src"
 						:img-attrs="{ class: 'w-full rounded-lg', alt: image.alt }"
 						format="webp"
-						loading="lazy"
+						loading="eager"
 						sizes="100vw md:768px lg:1024px"
 						/>
 				</div>
