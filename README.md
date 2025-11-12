@@ -89,15 +89,6 @@ Reusable components designed to manage and display content efficiently across mu
 - Pre-rendered static pages (SSG)
 - Fast loading times and excellent Core Web Vitals
 
-## Inspiration
-
-> "Fill your notebooks with undeniable proof."
-
-Footer features developers who inspire continuous improvement:
-- **Srinivasa Ramanujan** - Self-taught genius, proved himself through work
-- **Galileo Galilei** - Let evidence speak
-- **Dennis Ritchie** - Created foundational tools that changed computing
-
 ## License
 
 This project is open source and available under the [MIT License](LICENSE).
