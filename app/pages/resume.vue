@@ -16,7 +16,7 @@
 			
 			
 			<h4>Frontend Frameworks & Libraries</h4>
-			<p>Vue.js (Composition API & Options API), Vuex, Pinia, React (learning), Tailwind CSS, Bootstrap, jQuery</p>
+			<p>Vue.js (Composition API & Options API), Vuex, Pinia, Nuxt, React (learning), Tailwind CSS, Bootstrap, jQuery</p>
 			
 			
 			<h4>Backend Frameworks & Tools</h4>
