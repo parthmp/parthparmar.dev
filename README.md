@@ -2,7 +2,7 @@
 
 Personal portfolio website showcasing my work, projects, and experience as a Full-Stack Developer.
 
-**Live Site:** [parthparmar.dev](https://parthparmar.dev target="_blank)
+**Live Site:** [parthparmar.dev](https://parthparmar.dev)
 
 ## Overview
 
@@ -25,7 +25,6 @@ This portfolio site is built with **Nuxt 4 + Vue 3** using SSG (Static Site Gene
 - **Frontend:** Vue 3 (Composition API)
 - **Styling:** Tailwind CSS
 - **Image Optimization:** NuxtPicture
-- **Deployment:** Cloudflare Pages
 - **Build Mode:** SSG (Static Site Generation)
 
 ## Installation & Setup
@@ -40,7 +39,7 @@ This portfolio site is built with **Nuxt 4 + Vue 3** using SSG (Static Site Gene
 ```bash
 # Clone the repository
 git clone https://github.com/parthmp/parthparmar.dev
-cd portfolio-site
+cd parthparmar.dev
 
 # Install dependencies
 npm install
