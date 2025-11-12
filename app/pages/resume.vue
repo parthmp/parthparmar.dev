@@ -3,211 +3,287 @@
 		<PageHeader>Resume</PageHeader>
 		<div class="resume-content">
 		<div class="resume-skills">
+			
+			<h4><a href="https://github.com/parthmp" target="_blank" class="hover:text-primary-dark!">https://github.com/parthmp</a> <br>Available for Remote Work (US/EU/Canada/AU)  | Flexible with international time zones</h4>
 			<h3>Summary</h3>
-			<p>Vast professional experience in web and software programming, database design, integration, management, upgrades, training, and system administration.</p>
+			<p>Senior full-stack developer with 10+ years building complex web applications and leading technical initiatives. Specialized in Vue.js and Laravel with a track record of architecting scalable systems, mentoring development teams, and solving challenging technical problems.</p>
+			<p class="mt-1">Currently developing DeskMint (Side project), a sophisticated SaaS platform demonstrating modern architecture patterns and security best practices. Equally comfortable leading technical decisions or contributing as a senior individual contributor on meaningful projects.</p>
 			
 			
-			<h3>Skills</h3>
-			<h4 class="mt-2!">Languages (Advanced)</h4>
-			<p>JavaScript, PHP, CSS, HTML</p>
+			<h3>Technical Skills</h3>
+			<h4 class="mt-2!">Languages</h4>
+			<p>JavaScript, TypeScript, PHP, HTML5, CSS3</p>
 			
 			
-			<h4>Languages (I can work on)</h4>
-			<p>Perl, VB, TypeScript, C#, C, C++, Java, Python</p>
+			<h4>Frontend Frameworks & Libraries</h4>
+			<p>Vue.js (Composition API & Options API), Vuex, Pinia, React (learning), Tailwind CSS, Bootstrap, jQuery</p>
+			
+			
+			<h4>Backend Frameworks & Tools</h4>
+			<p>Laravel, Laravel Nova, Node.js, Express, Socket.io, CodeIgniter, WordPress (Custom Themes)</p>
 			
 			
 			<h4>Databases</h4>
-			<p>MySQL, SQLite, MongoDB, Custom Database</p>
+			<p>MySQL, SQLite, MongoDB, Custom Database (File based)</p>
 			
 			
-			<h4>Technologies &amp; Frameworks</h4>
-			<p>Laravel, PHPUnit, VueJs with Vuex, Nodejs & Express, Laravel Nova, Capacitorjs, Angular 7+, Bootstrap, Tailwind, CodeIgniter, WordPress, Socket.io, jQuery, Gulp, PostCSS, Webpack, Babel, LeafLeat, FFMPEG, GhostScript and Perl CGI.</p>
+			<h4>Development Tools</h4>
+			<p>Git, NPM, Vite, Composer, Webpack, Babel, Figma, PHPUnit (unit & integration testing)</p>
 			
 			
-			<h4>Tools</h4>
-			<p>Git, Notepad++, NPM, Vite, Composer, Figma, Filezilla, HeidiSQL, PHPMyAdmin, Web Browsers, Apache, IIS, Robo 3T, Atom, Brackets, Visual Studio Code, Visual Studio, Intellij IDEA,  CodeBlocks, MS Office, Adobe Illustrator, Adobe Photoshop, Eclipse.</p>
-			
-			
-			<h4>OS</h4>
-			<p>Windows and Linux.</p>
+			<h4>Mobile & Additional</h4>
+			<p>Capacitor.js (PWA/mobile), Leaflet, FFMPEG, GhostScript, PostCSS</p>
+
+			<h4>Server & DevOps</h4>
+			<p>DigitalOcean, Vultr, Cloudflare (Including Cloudflare serverless workers, KV and pages).</p>
+
+			<h4>Operating Systems</h4>
+			<p>Linux (server management & deployment), Windows</p>
+
+			<h4>Previously Worked With</h4>
+			<p>Java, C#, C++, C, VB (Visual Basic), Perl, Angular 7+</p>
         
         
         </div>
-        <h3>Work Experience</h3>
+        <h3>Professional Experience</h3>
         
 
-        <h4 class="mt-2!">Freelance Programmer (May 2025 – Current)</h4>
+        <h4 class="mt-2!">DeskMint (Personal Project) - Solo Developer</h4>
         
-        <h5>Worldwide</h5>
-        
+        <h5>May 2025 - Present | Remote | <a href="https://github.com/parthmp/deskmint-frontend" class="hover:text-primary-dark!" target="_blank">Frontend Source</a> | <a href="https://github.com/parthmp/deskmint-backend" class="hover:text-primary-dark!" target="_blank">Backend Source</a></h5>
+        <p class="mt-1">Building a comprehensive SaaS platform for client relationship management with secure architecture and modular design. <span class="poppins-bold">550+ commits (and counting!) across frontend and backend repositories</span> demonstrating active, production-grade development.</p>
+		<p class="mt-2 poppins-bold">Technical Architecture:</p>
         <ul>
-            <li>Available for full-time roles.</li>
-            <li>Working on freelance projects while actively seeking full-time opportunities. </li>
-            <li>Currently prototyping a personal productivity tool using Laravel, Vue, and Tailwind. Will be source available.</li>
+            <li>Full-stack SPA/PWA using Vue.js 3 (Composition API & Options API), Capacitor.js, Laravel, MySQL, TypeScript, and Tailwind CSS</li>
+            <li>Bank-grade custom authentication system with access/refresh tokens, dynamic token rotations and unique device fingerprinting</li>
+            <li>Dynamic custom field engine allowing users to define their own data structures and types</li>
+            <li>Sophisticated custom frontend DataTable component (Vue) with advanced filtering, sorting, and search capabilities</li>
+            <li>Custom Vue UI component library - Built from scratch including tabs, autocompletes, buttons, inputs, modals, and dropdowns - using TypeScript</li>
+            <li>Modular backend architecture using dependency injection and trait-based design patterns</li>
+            <li>Granular permission system with field-level visibility controls across all modules</li>
+            <li>Variable-based invoice numbering system with customizable tax configurations</li>
         </ul>
 
-        
-        
-        
-
-        <h4>DigitalSitara - Web &amp; Software Programmer (Sep 2021 – May 2025)</h4>
-        
-        <h5>Worldwide</h5>
-        
+        <p class="mt-2 poppins-bold">Key Modules Completed:</p>
         <ul>
-            <li>Started a small business (As a Solo Dev) providing cutting-edge software solutions to clients worldwide.</li>
-            <li>Developed a social media PWA (Progressive Web Application including Android Port with Capacitor) for a community.</li>
-            <li>Created custom WordPress themes from scratch (with ACF) for business websites.</li>
-            <li>Managed Linux servers for multiple projects.</li>
-            <li>Built a real estate portal for a client using Laravel.</li>
-            <li>Designed and developed a dynamic accounting website for a client.</li>
-            <li>Worked as the head programmer to drive company growth.</li>
-            <li>Business operations formally closed in May 2025 to pursue freelancing or full time roles once again.</li>
-        </ul>
+			<li>Reusable custom fields engine</li>
+			<li>Client management with custom field definitions</li>
+			<li>Product catalog module</li>
+			<li>Admin management module</li>
+			<li>Invoice settings with configurable templates and custom fields</li>
+			<li>Comprehensive settings management (company details, email, payment configuration)</li>
+		</ul>
+        
+		<p class="mt-2"><span class="poppins-bold">Demonstrates:</span> Advanced Vue.js skills, enterprise Laravel patterns, security-conscious development, complex database design, architectural planning, and comprehensive testing practices (PHPUnit).</p>
 
+		
+        <!---->
+
+		<h4 class="mt-7!">Freelance Full-Stack Developer</h4>
         
+        <h5>May 2025 - Present | Remote (Worldwide)</h5>
+        <p class="mt-1">Available for full-time opportunities while developing DeskMint and taking on select freelance projects. Actively seeking senior or lead developer roles with companies building meaningful products.</p>
+
+        <!---->
+
+		<!---->
+
+		<h4 class="mt-7!">DigitalSitara - Web & Software Developer</h4>
         
-        
-        
-        
-        <h4>Freelance Programmer (Dec 2020 – Sep 2021)</h4>
-        
-        <h5>Worldwide</h5>
-        
+        <h5>September 2021 - May 2025 | Remote (Worldwide)</h5>
+        <p class="mt-1">Founded and ran a solo software development business, building web applications for international clients. Closed operations in May 2025 to pursue full-time development roles, as I prefer focused technical work over juggling business operations.</p>
+
+		<p class="mt-2 poppins-bold">Notable Projects:</p>
         <ul>
-            <li>Worked with Laravel daily on multiple projects.</li>
-            <li>Used Vue and its plugins for frontend development.</li>
-            <li>Worked with Figma to provide UI/UX solutions.</li>
-            <li>Developed custom WordPress themes from scratch based on client requests.</li>
-        </ul>
+			<li><span class="poppins-bold">Social Media PWA: </span>Built a full-featured progressive web application with Android port (via Capacitor) for an online community.</li>
+			<li><span class="poppins-bold">Real Estate Portal: </span>Developed a custom Laravel-based agent referral and discovery platform with advanced search and filtering</li>
+			<li><span class="poppins-bold">Dynamic Accounting Website: </span>Created a specialized accounting website with custom business logic, custom design and custom CMS with Laravel. Used Figma for initial UI/UX design.</li>
+			<li><span class="poppins-bold">Custom WordPress Solutions: </span>Built multiple WordPress themes from scratch using Advanced Custom Fields for complex content management needs</li>
+		</ul>
 
-        
-        
-        
-        
-        <h4>ColorElephant Lda - Fullstack Programmer (Nov 2019 – Nov 2020)</h4>
-        
-        <h5>Porto, Portugal (Remote)</h5>
-        
+		<p class="mt-2 poppins-bold">Technical Responsibilities:</p>
         <ul>
-            <li>Developed multiple projects involving REST APIs and complex code.</li>
-            <li>Worked daily with Laravel on various projects.</li>
-            <li>Used Nova and its packages, creating custom solutions with Vue.js and REST APIs.</li>
-            <li>Effectively communicated and participated in team and company-wide meetings.</li>
-        </ul>
+			<li>Designed application architecture and database schemas for client projects</li>
+			<li>Managed Linux servers (deployment, security, maintenance) for multiple production applications</li>
+			<li>Worked directly with international clients to understand requirements and deliver solutions</li>
+			<li>Developed custom solutions using Laravel, Vue.js, and modern JavaScript ecosystem</li>
+		</ul>
 
+        <!---->
+
+		<!---->
+
+		<h4 class="mt-7!">Freelance Full-Stack Developer</h4>
         
-        
-        
-        <h4>Freelance Programmer (Oct 2018 – Nov 2019)</h4>
-        
-        <h5>Worldwide</h5>
-        
+        <h5>December 2020 - September 2021 | Remote (Worldwide)</h5>
+        <p class="mt-1">Worked with multiple international clients building web applications using Laravel and Vue.js ecosystem.</p>
+
         <ul>
-            <li>Worked with the latest JavaScript and PHP technologies, including Angular 7 and Laravel.</li>
-            <li>Developed and integrated REST APIs using Laravel, Passport, and OAuth 2.0.</li>
-            <li>Built a native Android app with Java for a Canadian municipality.</li>
-            <li>Achieved "Top Rated" freelancer status once again on <a href="https://www.upwork.com/freelancers/~01bed55ae9935fc4d2" target="_blank">Upwork</a>.</li>
-        </ul>
+			<li>Developed RESTful APIs and backend logic with Laravel</li>
+			<li>Built interactive user interfaces with Vue.js, Vuex, and related plugins</li>
+			<li>Collaborated and communicated with clients using Figma to implement pixel-perfect UI/UX</li>
+			<li>Created custom WordPress themes tailored to specific client requirements</li>
+			
+		</ul>
 
+        <!---->
         
+		<h4 class="mt-7!">ColorElephant Lda - Full-Stack Developer</h4>
         
-        
-        <h4>Costech Technologies Inc - Head/Lead Programmer (April 2015 – Oct 2018)</h4>
-        
-        <h5>Quebec, Canada (Remote)</h5>
-        
+        <h5>November 2019 - November 2020 | Porto, Portugal (Remote)</h5>
+        <p class="mt-1">Developed multiple projects for a Portugal-based software company, working with distributed teams across time zones.</p>
+
         <ul>
-            <li>Planned software design and architecture, guiding other developers and explaining various programming best practices.</li>
-            <li>Reviewed code from team members, identified mistakes and poor practices, and provided guidance for improvement.</li>
-            <li>Produced high-quality code, created and modified system functions, and conducted thorough testing.</li>
-            <li>Developed critical web software for the company, including modifications, upgrades, deployment, and testing-managed under the supervision of U.S. government agencies such as DPS, DDS, DOR, and DMV.</li>
-            <li>Built a desktop application for the company to update systems with a single click.</li>
-            <li>Developed a chat application using Node.js, MongoDB, and Express, performing testing and necessary upgrades.</li>
-            <li>Created a custom MVC framework in PHP and built a system based on it.</li>
-            <li>Designed a custom file-based CRUD database system using JSON and PHP.</li>
-            <li>Developed small applications using the MEAN stack with Twitter Bootstrap.</li>
-            <li>Conducted deep research on security and encryption, implementing top-tier encryption in software.</li>
-            <li>Ensured the security of PHP web applications by applying best practices and improving overall protection.</li>
-            <li>Diagnosed and resolved software bugs, ensuring issues were properly fixed and tested.</li>
-        </ul>
+			<li>Built and maintained Laravel applications with complex business logic and REST APIs</li>
+			<li>Developed custom solutions for Laravel Nova admin panel using Vue.js</li>
+			<li>Integrated third-party services and APIs into existing applications</li>
+			<li>Participated and contributed to technical discussions</li>
+			<li>Communicated effectively in remote team environment with daily standups and sprint planning</li>
+			
+		</ul>
 
+		<!---->
+        
+		<h4 class="mt-7!">Freelance Full-Stack Developer</h4>
+        
+        <h5>October 2018 - November 2019 | Remote (Worldwide)</h5>
+        <p class="mt-1">Worked with cutting-edge JavaScript and PHP technologies, <span class="poppins-bold">achieving "Top Rated" status on Upwork with 100% job success score.(Yes, again!)</span></p>
 
-        
-        
-        
-        <h4>Freelance Programmer (April 2013 – April 2015)</h4>
-        
-        <h5>Worldwide</h5>
-        
         <ul>
-            <li>Collaborated with multiple clients on various web projects, working with individuals from 21 different countries, primarily from the United States.</li>
-            <li>Managed clients and project requirements effectively.</li>
-            <li>Developed diverse projects involving third-party APIs and custom programming.</li>
-            <li>Provided guidance and consultation to clients to achieve the best possible results.</li>
-            <li>Utilized open-source projects to build tailored solutions for clients.</li>
-            <li>Worked on oDesk (now Upwork), achieving "Top Rated" status with a 100% Job Success score.</li>
-        </ul>
+			<li>Developed RESTful APIs using Laravel, Passport, and OAuth 2.0 authentication</li>
+			<li>Built modern SPA with Angular 7+ and TypeScript</li>
+			<li>Created a native Android application using Java for a Canadian municipal client</li>
+			<li>Collaborated with clients across 21+ countries, primarily US-based businesses</li>
+			
+		</ul>
 
+		
+		<!---->
+        
+		<h4 class="mt-7!">Costech Technologies Inc - Head/Lead Programmer</h4>
+        
+        <h5>April 2015 - October 2018 | Quebec, Canada (Remote)</h5>
+        <p class="mt-1">Led technical development for the company building software under U.S. government regulatory requirements (DPS, DDS, DOR, DMV), managing both architecture and team guidance.</p>
 
-        
-        
-        
-        <h4>SiliconLeaf Technologies - Programmer/Web Developer (February 2013 – April 2013)</h4>
-        
-        <h5>Surat, India</h5>
-        
+		<p class="mt-2 poppins-bold">Technical Leadership:</p>
         <ul>
-            <li>Developed new functions and implemented modifications in existing PHP web applications.</li>
-            <li>Addressed security issues and improved the security of existing web applications.</li>
-            <li>Fixed bugs and resolved issues in various applications.</li>
-            <li>Integrated and worked with multiple JavaScript libraries, adding them to applications as needed.</li>
-            <li>Implemented third-party APIs, ensuring proper functionality through thorough testing.</li>
-            <li>Conducted comprehensive testing of web applications to ensure reliability and performance.</li>
-        </ul>
+			<li>Planned software architecture and design patterns for critical U.S. government regulated systems</li>
+			<li>Conducted code reviews, identified issues, and mentored other developers on best practices</li>
+			<li>Made architectural decisions balancing security, performance, and maintainability</li>
+		</ul>
 
-
-        
-        
-        
-        <h4>MalenTek - Programmer/Web Developer (May 2011 – February 2013)</h4>
-        
-        <h5>Berkeley, United States (Remote)</h5>
-        
+		<p class="mt-2 poppins-bold">Key Projects & Achievements:</p>
         <ul>
-            <li>Designed web applications from start to finish, including software architecture and database design.</li>
-            <li>Developed a custom web application for technical support teams and code management.</li>
-            <li>Managed code, fixed errors, and resolved bugs in web applications.</li>
-            <li>Designed, developed, and managed a desktop application for Windows drivers.</li>
-            <li>Designed and deployed the website for Malentek.</li>
-            <li>Conducted thorough testing for software, web applications, and websites to ensure quality and performance.</li>
-        </ul>
+			<li>Developed mission-critical U.S. government regulated driving education web application.</li>
+			<li>Built real-time chat application using Node.js, MongoDB, Express, and Socket.io</li>
+			<li>Created custom MVC framework in PHP for legacy system modernization</li>
+			<li>Debugged legacy Perl CGI system (Over 18 years old system) and applied fixes while migrating functionality to modern PHP architecture</li>
+			<li>Designed file-based custom database system using JSON for specific use cases, eliminating the need for premium database licensing and saving the company $10,000</li>
+			<li>Implemented enterprise-grade encryption and security patterns throughout applications</li>
+			<li>Developed Windows desktop application for automated system deployment</li>
+			<li>Built small applications using MEAN stack and twitter bootstrap (MongoDB, Express, Angular, Node.js)</li>
+		</ul>
 
+		<p class="mt-2 poppins-bold">Security & Quality:</p>
+        <ul>
+			<li>Researched and implemented top-tier encryption standards for sensitive data</li>
+			<li>Applied security best practices across all PHP web applications</li>
+			<li>Diagnosed and resolved complex bugs with thorough testing and documentation</li>
+			
+		</ul>
+        
+		<!---->
+        
+		<h4 class="mt-7!">Freelance Web Developer</h4>
+        
+        <h5>April 2013 - April 2015 | Remote (Worldwide)</h5>
+        <p class="mt-1">Worked with international clients (primarily US-based) building diverse web projects. <span class="poppins-bold">Achieved "Top Rated" status on oDesk (now Upwork) with 100% job success score.</span></p>
 
-        
-        
-        
-        <h4>Charity work - 2016</h4>
-        
-        <h5>Surat, India</h5>
-        
         <ul>
-            <li>Designed and developed a website/web application, creating a custom MVC framework in PHP specifically for the project.</li>
-            <li>Built a website for a caste in its native language and integrated a third-party API to send OTP codes to mobile phones.</li>
-            <li>Conducted testing and managed the web application while also providing shared server hosting.</li>
-        </ul>
+			<li>Developed custom web applications integrating third-party APIs</li>
+			<li>Provided technical consultation to help clients choose optimal solutions</li>
+			<li>Managed client relationships and project requirements across multiple time zones</li>
+			<li>Leveraged open-source technologies to build tailored solutions efficiently</li>
+			<li>Created a custom buy/sell devices platform using Laravel 4, integrating eBay, ESN (Electronic Serial Number) and PayPal Adaptive Payments APIs</li>
+			
+		</ul>
+
+		
+		<!---->
+
+		<!---->
         
+		<h4 class="mt-7!">SiliconLeaf Technologies - Web Developer</h4>
         
-        
-        <h4>Other Experiments on my own</h4>
-        
+        <h5>February 2013 - April 2013 | Surat, India</h5>
+       
         <ul>
-            <li>Experimented with JSP, Android application development using Java and Android Studio.</li>
-            <li>Explored game development with Unity and Unreal Engine.</li>
-        </ul>
+			<li>Developed new features and modifications for existing PHP web applications</li>
+			<li>Addressed security vulnerabilities and hardened application security</li>
+			<li>Integrated JavaScript libraries and third-party APIs with comprehensive user testing</li>
+			<li>Fixed bugs and performed quality assurance testing</li>
+			
+		</ul>
+
+		
+		<!---->
+
+		<!---->
+        
+		<h4 class="mt-7!">MalenTek(driverissue.com) - Web Developer</h4>
+        
+        <h5>May 2011 - February 2013 | Berkeley, United States (Remote)</h5>
+       
+        <ul>
+			<li>Designed and developed web applications from concept to deployment</li>
+			<li>Built a custom web application for technical support teams</li>
+			<li>Developed a Windows desktop application for driver management</li>
+			<li>Designed and deployed company website</li>
+			<li>Performed comprehensive testing across all software products</li>
+			
+		</ul>
+
+		
+		<!---->
+
+		<!---->
+        <h3>Additional Experience</h3>
+        
+		<h4 class="mt-2!">Charity Web Development</h4>
+        
+        <h5>2016 Surat, India</h5>
+		<p class="mt-1">Volunteered technical skills to build a community website with custom PHP MVC framework, native language support, and mobile OTP integration via third-party API. Provided hosting and ongoing maintenance.</p>
+        
+
+		
+		<!---->
             
-            
-            
+		<!---->
+        <h3>Personal Experiments & Continuous Learning</h3>
+        
+		<ul>
+			<li>Currently learning React to expand frontend expertise</li>
+			<li>Previous exploration: JSP, Android development (Java/Android Studio), game development (Unity/Unreal Engine) ( <a href="https://github.com/parthmp/BuildingEscape" class="hover:text-primary-dark!" target="_blank">Source</a> )</li>
+			
+		</ul>
+        
+
+		
+		<!---->
+
+		<!---->
+        <h3>What I'm Looking For</h3>
+        
+		<p class="mt-1">Senior or lead full-stack developer role with a company that values clean code, thoughtful architecture, and solving real problems. Particularly interested in positions working with Vue.js and Laravel, though I'm adaptable and quick to learn new technologies. I thrive in environments where I can contribute technically while collaborating with talented teams on meaningful products.</p>
+		<ul>
+			<li><span class="poppins-bold">Availability: </span>Immediate</li>
+			<li><span class="poppins-bold">Work Authorization: </span>Available for remote work (no visa sponsorship required for remote positions)</li>
+			<li><span class="poppins-bold">Time Zone Flexibility: </span>Experienced working with US, Canadian, and European time zones</li>
+			
+		</ul>
+		
+		<!---->
+		
             
             
     </div>
@@ -218,6 +294,34 @@
 
 	import PageLayout from '../components/UI/PageLayout.vue';
 	import PageHeader from '../components/UI/PageHeader.vue';
+
+	const title = 'Resume | Parth Parmar - Full-Stack Developer (Vue.js & Laravel)';
+	const description = 'View Parth Parmar\'s resume. 10+ years building scalable web applications with Vue.js, Laravel, and TypeScript. Led development teams, architected complex systems, available for remote work.';
+	const keywords = 'Parth Parmar resume, Vue.js developer resume, Nuxt develoer, Polygloat Developer, Laravel developer CV, full-stack developer, senior web developer, TypeScript developer, remote developer resume, hire Vue developer, DeskMint creator';
+	const url = 'https://parthparmar.dev/resume';
+
+	defineOgImageComponent('OgImageForPages', {
+		title: title,
+		description : description
+	});
+
+	useSeoMeta({
+		title: title,
+		description: description,
+		keywords: keywords,
+		author: 'Parth Parmar',
+		robots: 'index, follow',
+		ogTitle: title,
+		ogDescription: description,
+		ogType: 'website',
+		ogUrl: url,
+		twitterCard: 'summary_large_image',
+		twitterTitle: title,
+		twitterDescription: description,
+		twitterCreator: '@logicalwebdev',
+		language: 'en',
+		canonical: url,
+	});
 
 
 </script>

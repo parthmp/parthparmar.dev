@@ -196,10 +196,10 @@ p, div{
 	font-style: normal;
 }
 .resume-skills h4{
-	@apply mt-5!;
+	@apply mt-5! text-xl!;
 }
 .resume-content h4{
-	@apply text-xl mt-5;
+	@apply text-[22px] mt-5;
 	font-weight: 500;
 	font-style: normal;
 }
