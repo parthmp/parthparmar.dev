@@ -82,7 +82,7 @@ p, div{
 } */
 
 #menu{
-	@apply min-w-[70%] h-screen fixed top-0 shadow-lg z-20 bg-phone-menu-background lg:bg-transparent lg:shadow-none lg:h-auto lg:static lg:left-0;
+	@apply min-w-[70%] h-screen fixed top-0 left-0 shadow-lg z-20 bg-phone-menu-background lg:bg-transparent lg:shadow-none lg:h-auto lg:static lg:left-0;
 }
 #menu{
 	/* now make it float for lg */
@@ -223,13 +223,24 @@ p, div{
 .githubsvg path:not(:first-child){
 	@apply dark:fill-global-background;
 }
-/* Target only the direct rect child, not the one in clipPath */
-/* Target by position */
+
 .tw-bg-rect {
-  @apply fill-phone-menu-background dark:fill-color-text;
+	@apply fill-phone-menu-background dark:fill-color-text;
 }
 .primary-link{
 	@apply text-primary! underline;
+}
+
+.menu-slide {
+	@apply -translate-x-full transition-transform duration-300 ease-out lg:translate-x-0 lg:transition-none;
+}
+
+.menu-slide.menu-open {
+	@apply translate-x-0;
+}
+
+.menu-slide.menu-closed {
+	@apply -translate-x-full;
 }
 /* .icon-path {
   @apply fill-primary! dark:fill-gray-950;

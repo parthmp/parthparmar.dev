@@ -2,7 +2,7 @@
   <div>
     <div class="container m-auto">
 		<div class="m-2">
-			<div v-if="data.isShowingPhoneMenu" class="overlay bg-primary-burnt/15 dark:bg-primary-burnt/10 fixed h-screen top-0 left-0 w-full z-10" @click="data.isShowingPhoneMenu = false"></div>
+			<div v-show="data.isShowingPhoneMenu" class="overlay bg-primary-burnt/15 dark:bg-primary-burnt/10 fixed h-screen top-0 left-0 w-full z-10" @click="data.isShowingPhoneMenu = false"></div>
 			<div class="launcher" @click.prevent="togglePhoneMenu">
 				<span id="launcher-icon" v-if="!data.isShowingPhoneMenu">
 					<IconMenu2 :size="22"></IconMenu2>
@@ -11,7 +11,7 @@
 					<IconX :size="22"></IconX>
 				</span>
 			</div>
-			<div ref="menuRef" id="menu" class="lg:flex pt-2 pb-1 lg:justify-between" :class="{'left-[-70%]': !data.isShowingPhoneMenu, 'left-[0%]': data.isShowingPhoneMenu, 'lg:bg-global-background!':data.isScrolled}">
+		<div ref="menuRef" id="menu" class="menu-slide lg:flex pt-2 pb-1 lg:justify-between fixed left-0 top-0 lg:left-auto" :class="{'menu-open': data.isShowingPhoneMenu, 'lg:bg-global-background!': data.isScrolled}">
 				<ul class="left-menu lg:flex lg:gap-10 lg:items-center">
 					<li><NuxtLink to="/" :class="{'active-menu-item': data.activeMenuItem === 'home'}" @click="handleMenuItemClick('home')">Home</NuxtLink></li>
 					<li><NuxtLink to="/portfolio" :class="{'active-menu-item': data.activeMenuItem === 'portfolio'}" @click="handleMenuItemClick('portfolio')">Portfolio</NuxtLink></li>
@@ -78,7 +78,28 @@
 	</div>
   </div>
 </template>
+<style scoped>
+	/* .menu-slide {
+		transition: transform 0.3s ease-out;
+		transform: translateX(-100%);
+	}
 
+	.menu-slide.menu-open {
+		transform: translateX(0);
+	}
+
+	.menu-slide.menu-closed {
+		transform: translateX(-170%);
+	}
+
+	
+	@media (min-width: 1024px) {
+		.menu-slide {
+			transition: none;
+			transform: none !important;
+		}
+	} */
+</style>
 <script lang="ts" setup>
 
 	import { onMounted, onUnmounted, reactive, ref, watchEffect } from 'vue';
@@ -126,13 +147,13 @@
 		}else{
 			data.isShowingPhoneMenu = true;
 		}
-		// data.isShowingPhoneMenu = !data.isShowingPhoneMenu;
-		console.log(data.isShowingPhoneMenu);
+		
 	}
 
+	/*
 	// onClickOutside(menuRef, () => {
 	// 	data.isShowingPhoneMenu = false;
-	// });
+	// });*/
 
 	const scrollToTop = () : void => {
 		window.scrollTo({
