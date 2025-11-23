@@ -4,7 +4,7 @@
 		<div class="resume-content">
 		<div class="resume-skills">
 			
-			<h4><a href="https://github.com/parthmp" target="_blank" class="hover:text-primary-dark!">https://github.com/parthmp</a> <br>Available for Remote Work (US/EU/Canada/AU)  | Flexible with international time zones</h4>
+			<h4><a href="https://github.com/parthmp" target="_blank" class="hover:text-primary-dark!">https://github.com/parthmp</a> <br>Available for Remote Work  | Flexible with international time zones</h4>
 			<h3>Summary</h3>
 			<p>Senior full-stack developer with 10+ years building complex web applications and leading technical initiatives. Specialized in Vue.js and Laravel with a track record of architecting scalable systems, mentoring development teams, and solving challenging technical problems.</p>
 			<p class="mt-1">Currently developing DeskMint (Side project), a sophisticated SaaS platform demonstrating modern architecture patterns and security best practices. Equally comfortable leading technical decisions or contributing as a senior individual contributor on meaningful projects.</p>
