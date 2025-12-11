@@ -152,6 +152,7 @@
 	import CloudflareSvg from '~/assets/svg/tech/cloudflare.svg';
 	import LinuxSvg from '~/assets/svg/tech/linux.svg';
 	import WindowsSvg from '~/assets/svg/tech/windows.svg';
+	import DockerSvg from '~/assets/svg/tech/docker.svg';
 	import { Component as VueComponent } from 'vue';
 
 	type TechItem = {
@@ -212,7 +213,8 @@
 		server : [
 			{ name: 'DigitalOcean', icon: DOSvg},
 			{ name: 'Vultr', icon: VultrSvg },
-			{ name: 'Cloudflare', icon: CloudflareSvg }
+			{ name: 'Cloudflare', icon: CloudflareSvg },
+			{ name: 'Docker', icon: DockerSvg }
 		],
 		os : [
 			{ name: 'Linux', icon: LinuxSvg},
