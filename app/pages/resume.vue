@@ -6,7 +6,7 @@
 			
 			<h4><a href="https://github.com/parthmp" target="_blank" class="hover:text-primary-dark!">https://github.com/parthmp</a> <br>Available for Remote Work  | Flexible with international time zones</h4>
 			<h3>Summary</h3>
-			<p>Senior full-stack developer with 10+ years building complex web applications and leading technical initiatives. Specialized in Vue.js and Laravel with a track record of architecting scalable systems, mentoring development teams, and solving challenging technical problems.</p>
+			<p>Senior full-stack developer with 13+ years building complex web applications and leading technical initiatives. Specialized in Vue.js and Laravel with a track record of architecting scalable systems, mentoring development teams, and solving challenging technical problems</p>
 			<p class="mt-1">Currently developing DeskMint (Side project), a sophisticated SaaS platform demonstrating modern architecture patterns and security best practices. Equally comfortable leading technical decisions or contributing as a senior individual contributor on meaningful projects.</p>
 			
 			
@@ -16,7 +16,7 @@
 			
 			
 			<h4>Frontend Frameworks & Libraries</h4>
-			<p>Vue.js (Composition API & Options API), Vuex, Pinia, Nuxt, React (learning), Tailwind CSS, Bootstrap, jQuery</p>
+			<p>Vue.js (Composition API & Options API), Vuex, Pinia, Nuxt, React, Tailwind CSS, Bootstrap, jQuery</p>
 			
 			
 			<h4>Backend Frameworks & Tools</h4>
@@ -51,7 +51,7 @@
         <h4 class="mt-2!">DeskMint (Personal Project) - Solo Developer</h4>
         
         <h5>May 2025 - Present | Remote | <a href="https://github.com/parthmp/deskmint-frontend" class="hover:text-primary-dark!" target="_blank">Frontend Source</a> | <a href="https://github.com/parthmp/deskmint-backend" class="hover:text-primary-dark!" target="_blank">Backend Source</a></h5>
-        <p class="mt-1">Building a comprehensive SaaS platform for client relationship management with secure architecture and modular design. <span class="poppins-bold">550+ commits (and counting!) across frontend and backend repositories</span> demonstrating active, production-grade development.</p>
+        <p class="mt-1">Building a production-grade SaaS platform solo - full stack Laravel 13 + Vue.js with modular architecture, granular permissions, dynamic custom fields engine, invoice generation, and payment integrations. <span class="poppins-bold">780+ commits across frontend and backend so far (and counting!). Building it to demonstrate my skills and real world architecture decisions. Currently seeking full-time senior or lead developer roles.</span></p>
 		<p class="mt-2 poppins-bold">Technical Architecture:</p>
         <ul>
             <li>Full-stack SPA/PWA using Vue.js 3 (Composition API & Options API), Capacitor.js, Laravel, MySQL, TypeScript, and Tailwind CSS</li>
@@ -76,54 +76,29 @@
         
 		<p class="mt-2"><span class="poppins-bold">Demonstrates:</span> Advanced Vue.js skills, enterprise Laravel patterns, security-conscious development, complex database design, architectural planning, and comprehensive testing practices (PHPUnit).</p>
 
-		
-        <!---->
+		<!---->
 
 		<h4 class="mt-7!">Freelance Full-Stack Developer</h4>
         
-        <h5>May 2025 - Present | Remote (Worldwide)</h5>
-        <p class="mt-1">Available for full-time opportunities while developing DeskMint and taking on select freelance projects. Actively seeking senior or lead developer roles with companies building meaningful products.</p>
-
-        <!---->
-
-		<!---->
-
-		<h4 class="mt-7!">DigitalSitara - Web & Software Developer</h4>
-        
-        <h5>September 2021 - May 2025 | Remote (Worldwide)</h5>
-        <p class="mt-1">Founded and ran a solo software development business, building web applications for international clients. Closed operations in May 2025 to pursue full-time development roles, as I prefer focused technical work over juggling business operations.</p>
+        <h5>December 2020 - Present | Remote (Worldwide)</h5>
+        <p class="mt-1">Delivered web applications for international clients across multiple countries as an independent contractor. Specialized in Laravel and Vue.js with a focus on custom architecture and clean implementation. <span class="poppins-bold">Currently seeking full-time senior or lead developer roles.</span></p>
 
 		<p class="mt-2 poppins-bold">Notable Projects:</p>
         <ul>
 			<li><span class="poppins-bold">Social Media PWA: </span>Built a full-featured progressive web application with Android port (via Capacitor) for an online community.</li>
 			<li><span class="poppins-bold">Real Estate Portal: </span>Developed a custom Laravel-based agent referral and discovery platform with advanced search and filtering</li>
-			<li><span class="poppins-bold">Dynamic Accounting Website: </span>Created a specialized accounting website with custom business logic, custom design and custom CMS with Laravel. Used Figma for initial UI/UX design.</li>
-			<li><span class="poppins-bold">Custom WordPress Solutions: </span>Built multiple WordPress themes from scratch using Advanced Custom Fields for complex content management needs</li>
+			<li><span class="poppins-bold">Accounting Platform: </span>Custom Laravel CMS with specialized business logic and Figma-designed UI/UX</li>
+			<li><span class="poppins-bold">WordPress Solutions: </span> Built multiple themes from scratch using Advanced Custom Fields for complex content management</li>
 		</ul>
 
 		<p class="mt-2 poppins-bold">Technical Responsibilities:</p>
         <ul>
 			<li>Designed application architecture and database schemas for client projects</li>
-			<li>Managed Linux servers (deployment, security, maintenance) for multiple production applications</li>
-			<li>Worked directly with international clients to understand requirements and deliver solutions</li>
-			<li>Developed custom solutions using Laravel, Vue.js, and modern JavaScript ecosystem</li>
-		</ul>
-
-        <!---->
-
-		<!---->
-
-		<h4 class="mt-7!">Freelance Full-Stack Developer</h4>
-        
-        <h5>December 2020 - September 2021 | Remote (Worldwide)</h5>
-        <p class="mt-1">Worked with multiple international clients building web applications using Laravel and Vue.js ecosystem.</p>
-
-        <ul>
-			<li>Developed RESTful APIs and backend logic with Laravel</li>
-			<li>Built interactive user interfaces with Vue.js, Vuex, and related plugins</li>
-			<li>Collaborated and communicated with clients using Figma to implement pixel-perfect UI/UX</li>
-			<li>Created custom WordPress themes tailored to specific client requirements</li>
-			
+			<li>Managed Linux servers - deployment, security, and maintenance for production applications</li>
+			<li>Developed RESTful APIs and backend systems with Laravel</li>
+			<li>Built interactive user interfaces with Vue.js, Vuex, and related ecosystem</li>
+			<li>Collaborated with clients using Figma to implement pixel-perfect UI/UX</li>
+			<li>Worked directly with international clients across multiple countries to translate requirements into technical solutions</li>
 		</ul>
 
         <!---->
